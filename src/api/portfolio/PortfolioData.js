@@ -11,12 +11,14 @@ import BastianBux from "../../views/portfolio/BastianBux";
 const data = [
     {
         id: 1,
-        title: "Time Tage Watch",
+        // title: "Time Tage Watch",
+        // title: "Tomorrow's Technologies - Today",
+        title: "TOMOROW'S TECHNOLOGY - TODAY!",
         slug: 'time-tag-watch',
         category: ['Brand'],
-        description: 'Sometimes, we need to check the time, wondering when our work or meeting will finish, without getting caught by others.',
-        src: '/assets/img/project/project1/1.jpg',
-        srcSlider: '/assets/img/project/project1/13.jpg',
+        description: 'At DEXSA, we don’t just follow trends—we create them. Our team of elite engineers, visionary designers, and innovators crafts cutting-edge digital solutions that redefine industries. From next-gen web development to AI-driven automation, we bring tomorrow’s technologies to life today.',
+        src: '/assets/img/project/project1/bg01.png',
+        srcSlider: '/assets/img/project/project1/bg1.png',
         overlay: 2,
         component: (props) => <TimeTagWatch {...props} />
     },

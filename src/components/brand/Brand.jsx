@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import brandLight from './logo.png';
-import brandDark from './logo-dark.png';
+import brandLight from './logo-dexsa-w.png';
+import brandDark from './logo-dexsa-w.png';
 
 const MainBrand = styled.div`
    img{
@@ -39,6 +39,6 @@ const Brand = ({width, height, alt}) => {
 }
 
 MainBrand.defaultProps = {width: '80px', height: 'auto'}
-Brand.defaultProps = {alt: "Droow"}
+Brand.defaultProps = {alt: "DEXSA"}
 
 export default React.memo(Brand);

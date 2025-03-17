@@ -1,27 +1,25 @@
 import React from "react";
 
-
-import {Container} from "react-bootstrap";
-import {faAngleRight} from "@fortawesome/free-solid-svg-icons";
+// import {Container} from "react-bootstrap";
+// import {faAngleRight} from "@fortawesome/free-solid-svg-icons";
 import {Helmet} from "react-helmet";
 
-
 import SliderPortfolio from "../../components/slider-portfolio/SliderPortfolio";
-import HeroSection from "../../components/hero-section/HeroSection";
-import ServiceOne from "../../components/services/ServiceOne";
-import TitleSection from "../../components/heading/TitleSection";
-import FadeUpTrigger from "../../animation/FadeUpTrigger";
-import ButtonDefault from "../../components/button/button-default/ButtonDefault";
-import PortfolioSwiper from "../../components/portfolio/PortfolioSwiper";
-import BoxImageVertical from "../../components/box-image-vertical/BoxImageVertical";
-import DsnGrid from "../../components/DsnGrid";
-import TitleCover from "../../components/heading/title-cover/TitleCover";
-import Testimonial from "../../components/testimonial/Testimonial";
-import BlogSwiper from "../../components/blog/BlogSwiper";
-import BrandClient from "../../components/brand-client/BrandClient";
-import NextPageContent from "../../components/next/NextPageContent";
-import Footer from "../../components/footer/Footer";
-import HeroSectionTow from "../../components/hero-section/HeroSectionTow";
+// import HeroSection from "../../components/hero-section/HeroSection";
+// import ServiceOne from "../../components/services/ServiceOne";
+// import TitleSection from "../../components/heading/TitleSection";
+// import FadeUpTrigger from "../../animation/FadeUpTrigger";
+// import ButtonDefault from "../../components/button/button-default/ButtonDefault";
+// import PortfolioSwiper from "../../components/portfolio/PortfolioSwiper";
+// import BoxImageVertical from "../../components/box-image-vertical/BoxImageVertical";
+// import DsnGrid from "../../components/DsnGrid";
+// import TitleCover from "../../components/heading/title-cover/TitleCover";
+// import Testimonial from "../../components/testimonial/Testimonial";
+// import BlogSwiper from "../../components/blog/BlogSwiper";
+// import BrandClient from "../../components/brand-client/BrandClient";
+// import NextPageContent from "../../components/next/NextPageContent";
+// import Footer from "../../components/footer/Footer";
+// import HeroSectionTow from "../../components/hero-section/HeroSectionTow";
 
 
 const MainDemo = () => {
@@ -31,7 +29,7 @@ const MainDemo = () => {
         <React.Fragment>
 
             <Helmet>
-                <title>Droow - Portfolio & Agency React Template </title>
+                <title>DEXSA - Development Studio </title>
             </Helmet>
 
 
@@ -40,36 +38,36 @@ const MainDemo = () => {
             {/*End Slider Portfolio*/}
 
             {/*Start Hero Section*/}
-            <Container className="section-margin dsn-right-container">
+            {/* <Container className="section-margin dsn-right-container">
                 <HeroSection/>
-            </Container>
+            </Container> */}
             {/*End Hero Section*/}
 
 
             {/*Start Service Section*/}
-            <Container className="section-margin">
+            {/* <Container className="section-margin">
                 <TitleSection description="Our Services">
                     New Branding Agency
                 </TitleSection>
                 <ServiceOne className="text-center" col={3} colMobile={1} colGap={0} colGapTablet={30}/>
-            </Container>
+            </Container> */}
             {/*End Service Section*/}
 
             {/*Start Box Right Info*/}
-            <HeroSectionTow className="section-margin text-center"/>
+            {/* <HeroSectionTow className="section-margin text-center"/> */}
             {/*End Box Right Info*/}
 
 
             {/*Start Portfolio Swiper*/}
-            <Container as={TitleSection} description="Our Work">
+            {/* <Container as={TitleSection} description="Our Work">
                 Creative Portfolio Designs
             </Container>
-            <PortfolioSwiper grabCursor/>
+            <PortfolioSwiper grabCursor/> */}
             {/*End Portfolio Swiper*/}
 
 
             {/*Start Box Info With Image*/}
-            <BoxImageVertical src="/assets/img/project/project1/5.jpg" className="section-margin">
+            {/* <BoxImageVertical src="/assets/img/project/project1/5.jpg" className="section-margin">
                 <TitleCover>Droow</TitleCover>
                 <FadeUpTrigger>
                     {(ref) =>
@@ -98,26 +96,26 @@ const MainDemo = () => {
                         </DsnGrid>
                     }
                 </FadeUpTrigger>
-            </BoxImageVertical>
+            </BoxImageVertical> */}
             {/*End  Box Info With Image*/}
 
             {/*Start Testimonial*/}
-            <Container className="section-margin">
+            {/* <Container className="section-margin">
                 <Testimonial autoHeight loop grabCursor title="Feedback from our clients."/>
-            </Container>
+            </Container> */}
             {/*End Testimonial*/}
 
             {/*Start Blog*/}
-            <Container className="section-margin dsn-right-container">
+            {/* <Container className="section-margin dsn-right-container">
                 <TitleSection description="Latest News">
                     Latest & Greatest Post
                 </TitleSection>
                 <BlogSwiper grabCursor loop autoHeight/>
-            </Container>
+            </Container> */}
             {/*End Blog*/}
 
             {/*Start Brand*/}
-            <Container className="section-margin">
+            {/* <Container className="section-margin">
                 <TitleSection description="Our clients">
                     Your successful, our <br/> reputation
                 </TitleSection>
@@ -127,11 +125,11 @@ const MainDemo = () => {
                     colGap={2}
                     rowGap={2}
                 />
-            </Container>
+            </Container> */}
             {/*End Brand*/}
 
-            <NextPageContent className="section-margin"/>
-            <Footer/>
+            {/* <NextPageContent className="section-margin"/> */}
+            {/* <Footer/> */}
 
         </React.Fragment>
 

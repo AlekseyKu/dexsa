@@ -6,13 +6,16 @@ import MenuContent from "./MenuContent";
 
 const menuContent = [
     {
-        name: "Home",
-        dropdownMenu: [
-            {name: "Main Demo", to: "/"},
-            {name: "One Page 2", to: "/demo-2"},
-            {name: "One Page 3", to: "/demo-3"},
-        ]
+        name: "Home", to: "/"
     },
+    // {
+    //     name: "Home",
+    //     dropdownMenu: [
+    //         {name: "Main Demo", to: "/"},
+    //         {name: "One Page 2", to: "/demo-2"},
+    //         {name: "One Page 3", to: "/demo-3"},
+    //     ]
+    // },
     {
         name: "Portfolio",
         dropdownMenu: [
@@ -79,7 +82,7 @@ const DroowMenu = ({hamburger}) => {
     return (
         <Navbar hamburger={hamburger}>
             <Navbar.Brand to={"/"}>
-                <Brand width="80px" height="26px"/>
+                <Brand width="250px" height="auto"/>
             </Navbar.Brand>
 
             <Navbar.Collapse cover="Menu">

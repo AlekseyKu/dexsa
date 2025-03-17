@@ -3,18 +3,25 @@ import {dsnCN} from "../../../hooks/helper";
 
 function MenuContent({className}) {
     const socialData = [
-        {link: "#0", name: "Dribbble."},
-        {link: "#0", name: "Behance."},
-        {link: "#0", name: "Linkedin."},
-        {link: "#0", name: "Twitter."}
+        {link: "https://www.facebook.com/profile.php?id=61572373418340", name: "Facebook."},
+        {link: "https://www.instagram.com/dexstudioapp", name: "Instagram."},
+        {link: "https://www.linkedin.com/company/dexstudioapp", name: "Linkedin."},
+        // {link: "#0", name: "Twitter."}
     ];
     return (
         <div className={dsnCN('container-content  d-flex flex-column justify-content-center', className)}>
             <div className="nav__info">
                 <div className="nav-content">
-                    <h5 className="sm-title-block mb-10">Studio</h5>
+                    <h5 className="sm-title-block mb-10">Company</h5>
                     <p>
-                        26-30 New Damietta <br/> El-Mahalla El-Kubra, SK1 66LM
+                        US Delewer State <br/> Address, SK1 66LM
+                    </p>
+
+                </div>
+                <div className="nav-content mt-30">
+                    <h5 className="sm-title-block mb-10">Development Studio</h5>
+                    <p>
+                        Vietnam, Danang City <br/> Address, SK1 66LM
                     </p>
 
                 </div>
@@ -22,12 +29,12 @@ function MenuContent({className}) {
                     <h5 className="sm-title-block mb-10">Contact</h5>
                     <p className="links over-hidden mb-1">
                         <a className="link-hover" href="tel:+00 (2)012 3321" data-hover-text="+00 (2)012 3321">
-                            +00 (2)012 3321
+                            +47 777 7755
                         </a>
                     </p>
                     <p className="links over-hidden">
-                        <a className="link-hover" href="mailto:info@dsngrid.com"
-                           data-hover-text="info@dsngrid.com">info@dsngrid.com</a>
+                        <a className="link-hover" href="mailto:info@dexsa.sitem"
+                           data-hover-text="info@dexsa.site">info@dexsa.site</a>
                     </p>
                 </div>
             </div>
@@ -42,7 +49,13 @@ function MenuContent({className}) {
                     </ul>
                 </div>
             </div>
+
+            <div className="footer-text mt-30 text-left">
+                <p>DEXSA 2025 © All Rights Reserved</p>
+            </div>
+
         </div>
+
     );
 }
 

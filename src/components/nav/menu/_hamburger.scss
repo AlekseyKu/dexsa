@@ -75,10 +75,11 @@ ul.primary-nav {
     a {
       color: $body-color;
       transform-origin: left top;
-      transition: 500ms 0ms;
+      transition: 800ms 0ms;
 
       &:hover {
-        transform: skewX(10deg);
+        // transform: skewX(10deg);
+        transform: scale(1.1);
         letter-spacing: 2.5px;
       }
     }

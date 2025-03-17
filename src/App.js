@@ -15,12 +15,10 @@ import Layout from "./layout/Layout";
 
 function App() {
 
-
     useLayoutEffect(() => {
 
         gsap.registerPlugin(ScrollTrigger);
         dsnEffect.registerEffect(moveSection, fade, textAnimation)
-
 
         gsap.config({
             nullTargetWarn: false
@@ -37,7 +35,6 @@ function App() {
         <Layout className="v-dark background-main" tag="main">
             <Router/>
         </Layout>
-
 
     );
 }

@@ -1,3 +1,8 @@
+// src\assets\sass\typography\_typography.scss
+@use "headings" as *;
+@use "copy" as *;
+
+
 button,
 input,
 select,
@@ -5,7 +10,3 @@ optgroup,
 textarea {
   text-rendering: optimizeLegibility;
 }
-
-@import "headings";
-
-@import "copy";

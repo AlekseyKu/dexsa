@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Importing the CSS
-import './style.scss'
+// import './style.scss'
 
 import MoveTrigger from "../../animation/MoveTrigger";
 import FadeUpTrigger from "../../animation/FadeUpTrigger";

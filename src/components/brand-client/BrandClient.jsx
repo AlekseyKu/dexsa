@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './style.scss'
+// import './style.scss'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPlus} from "@fortawesome/free-solid-svg-icons";
 import DsnGrid, {DsnGridProps} from "../DsnGrid";

@@ -1,6 +1,6 @@
 import React, {useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
-import './style.scss';
+// import './style.scss';
 import {dsnCN} from "../../hooks/helper";
 
 function ContactForm({className}) {

@@ -1,5 +1,6 @@
+// src\layout\CustomCursor.jsx
 import React, {useEffect, useRef,} from 'react';
-import './customCursorStyle.scss';
+// import './customCursorStyle.scss';
 import gsap from 'gsap';
 
 function CustomCursor({duration, durationChangeSize, size, scale, ease}) {

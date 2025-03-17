@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import './style.scss';
+// import './style.scss';
 import "@fancyapps/ui/dist/fancybox.css";
 import {Fancybox as NativeFancybox} from "@fancyapps/ui";
 import DsnGrid from "../DsnGrid";

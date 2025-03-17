@@ -1,8 +1,9 @@
+// src\components\testimonial\Testimonial.jsx
 import React from 'react'
-import './style.scss'
+// import './style.scss'
 import TestimonialItem from './TestimonialItem';
 import {Swiper, SwiperSlide} from 'swiper/react';
-import 'swiper/css';
+// import 'swiper/css';
 import MoveTrigger from "../../animation/MoveTrigger";
 import {Pagination, SwiperOptions} from "swiper";
 import {dsnCN} from "../../hooks/helper";

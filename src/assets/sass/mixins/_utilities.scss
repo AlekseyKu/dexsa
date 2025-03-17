@@ -1,3 +1,6 @@
+// src/assets/sass/mixins/_utilities.scss
+@forward "mixins-master";
+
 $breakpoints_xs: 400;
 $breakpoints_sm: 575;
 $breakpoints_md: 767;
@@ -5,18 +8,19 @@ $breakpoints_lg: 991;
 $breakpoints_xl: 1199;
 $breakpoints_xxl: 1399;
 
-
-@mixin dsnSetMedia($width , $num_width) {
+@mixin dsnSetMedia($width, $num_width) {
   @if ($width == min) {
-    $num_width: $num_width + 1;
+    $num_width: ($num_width + 1) * 1px;
+  } @else {
+    $num_width: $num_width * 1px;
   }
 
-  @media only screen and (#{$width}-width: #{$num_width}px) {
+  @media only screen and (#{$width}-width: #{$num_width}) { // Убрали px, так как он уже добавлен выше
     @content;
   }
 }
 
-@mixin dsnSetMediaBetween($from , $to) {
+@mixin dsnSetMediaBetween($from, $to) {
   $from: $from + 1;
 
   @media only screen and (min-width: #{$from}px) and (max-width: #{$to}px) {
@@ -24,58 +28,47 @@ $breakpoints_xxl: 1399;
   }
 }
 
-
-@mixin media_575($width : max) {
+@mixin media_575($width: max) {
   @include dsnSetMedia($width, 575) {
-    @content
+    @content;
   }
-
 }
 
-
-@mixin media_400($width : max) {
+@mixin media_400($width: max) {
   @include dsnSetMedia($width, 400) {
-    @content
+    @content;
   }
 }
 
-
-@mixin media_991($width : max) {
+@mixin media_991($width: max) {
   @include dsnSetMedia($width, 991) {
-    @content
+    @content;
   }
-
 }
 
-
-@mixin media_768($width : max) {
+@mixin media_768($width: max) {
   @include dsnSetMedia($width, 767) {
-    @content
+    @content;
   }
 }
 
-
-@mixin media_1200($width : max) {
+@mixin media_1200($width: max) {
   @include dsnSetMedia($width, 1200) {
-    @content
+    @content;
   }
-
 }
 
-@mixin media_1400($width : max) {
+@mixin media_1400($width: max) {
   @include dsnSetMedia($width, 1399) {
-    @content
+    @content;
   }
-
 }
-
 
 @mixin mediaUpSize($size) {
   @media only screen and (min-width: $size) {
     @content;
   }
 }
-
 
 @mixin mediaSize($size) {
   @media only screen and (max-width: $size) {
@@ -88,8 +81,9 @@ $breakpoints_xxl: 1399;
     @content;
   }
 }
+
 @mixin media_575X768() {
-  @include dsnSetMediaBetween($breakpoints_sm ,$breakpoints_md) {
+  @include dsnSetMediaBetween($breakpoints_sm, $breakpoints_md) {
     @content;
   }
 }
@@ -99,6 +93,7 @@ $breakpoints_xxl: 1399;
     @content;
   }
 }
+
 @mixin media_991X1200() {
   @include dsnSetMediaBetween($breakpoints_lg, $breakpoints_xl) {
     @content;
@@ -110,4 +105,3 @@ $breakpoints_xxl: 1399;
     @content;
   }
 }
-

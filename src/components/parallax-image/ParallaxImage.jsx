@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-import './style.scss';
+// import './style.scss';
 import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {dsnCN} from "../../hooks/helper";

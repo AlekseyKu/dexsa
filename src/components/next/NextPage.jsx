@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap';
 
-import './style.scss'
+// import './style.scss'
 import NavLink from "../button/NavLink";
 import {BsPrefixRefForwardingComponent} from "react-bootstrap/helpers";
 import {NavLinkProps} from "react-bootstrap/NavLink";

@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import './style.scss';
+// import './style.scss';
 import "@fancyapps/ui/dist/fancybox.css";
 import {FontAwesomeIcon, FontAwesomeIconProps} from "@fortawesome/react-fontawesome";
 import {faPlay} from "@fortawesome/free-solid-svg-icons";

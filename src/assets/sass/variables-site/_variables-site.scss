@@ -1,5 +1,4 @@
-@import "colors";
-@import "fonts";
-@import "structure";
-@import "transitions";
-
+@forward "colors";
+@forward "fonts";
+@forward "structure";
+@forward "transitions";

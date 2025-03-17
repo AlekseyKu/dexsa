@@ -1,9 +1,9 @@
 import React from 'react'
-import './style.scss'
+// import './style.scss'
 import TestimonialItem from './TestimonialItem';
 import {Swiper, SwiperSlide} from 'swiper/react';
 
-import 'swiper/css';
+// import 'swiper/css';
 import {SwiperOptions} from "swiper";
 import ControlNav from "../slider-portfolio/ControlNav";
 import {dsnCN} from "../../hooks/helper";

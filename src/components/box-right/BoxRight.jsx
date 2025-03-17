@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.scss'
+// import './style.scss'
 
 import ParallaxImage, {ParallaxImageProps} from "../parallax-image/ParallaxImage";
 import {Container} from "react-bootstrap";

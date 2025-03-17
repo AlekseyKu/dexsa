@@ -1,5 +1,5 @@
 import React, {useLayoutEffect, useRef} from 'react';
-import './style.scss';
+// import './style.scss';
 import MoveTrigger, {MoveTriggerProps} from "../../animation/MoveTrigger";
 import {Container} from "react-bootstrap";
 import {dsnCN} from "../../hooks/helper";

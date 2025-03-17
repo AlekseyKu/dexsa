@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react'
 import {dsnCN} from '../../hooks/helper'
-import './style.scss'
+// import './style.scss'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faFacebookF, faTwitter, faInstagram} from '@fortawesome/free-brands-svg-icons';
 import {splittingItems} from "../../hooks/Spltting";

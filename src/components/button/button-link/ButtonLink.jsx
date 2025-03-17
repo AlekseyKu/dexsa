@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.scss'
+// import './style.scss'
 import NavLink from "../NavLink";
 import {BsPrefixRefForwardingComponent} from "react-bootstrap/helpers";
 import {NavLinkProps} from "react-bootstrap/NavLink";

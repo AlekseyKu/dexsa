@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react'
-import './style.scss'
+// import './style.scss'
 import PortfolioItem from './PortfolioItem';
 import {getPortfolioData} from "../../api/portfolio/PortfolioData";
 import DsnGrid, {DsnGridProps} from "../DsnGrid";

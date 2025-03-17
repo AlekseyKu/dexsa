@@ -1,4 +1,4 @@
-@import "../../assets/sass/helper";
+@use "../../assets/sass/helper" as *;
 
 .site-header {
   position: fixed;
@@ -39,7 +39,7 @@
 
   @include media_991(min) {
     &:not(.dsn-hamburger) {
-      @import "menu/classic";
+      @use "menu/classic" as *;
 
       .menu-cover-title {
         display: none;
@@ -49,7 +49,7 @@
 
 
   &.dsn-hamburger {
-    @import "menu/hamburger";
+    @use "menu/hamburger" as *;
   }
 
   &.nav-bg{

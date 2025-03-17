@@ -1,4 +1,7 @@
 //@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@use "../variables-site/variables-site" as *;
+@use "../mixins/utilities" as *;
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: $heading-color;

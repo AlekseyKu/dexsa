@@ -1,3 +1,16 @@
+// src/assets/sass/_global.scss
+
+@use "variables-site/variables-site" as *;
+@use "mixins/mixins-master" as *;
+@use "mixins/utilities" as *;
+
+@forward "variables-site/variables-site";
+@forward "mixins/mixins-master";
+@forward "mixins/utilities";
+
+
+
+
 //---> Margin Helper
 @include MarginPadding(20, 5, ".m", margin);
 @include MarginPadding(20, 5, ".mt", margin-top);
@@ -46,15 +59,16 @@
     --dsn-row-item: var(--dsn-row-gap-mobile, var(--dsn-row-gap-tablet, var(--dsn-row-gap, 30px)));
   }
 
+  @include media_575() {
+    --dsn-width-item: 1 !important;
+  }
 
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--dsn-col-item));
   margin-top: calc(-1 * var(--dsn-row-item));
 
-  @include media_575() {
-    --dsn-width-item: 1 !important;
-  }
+
 
   > *:not(.cover-section):not(.p-absolute) {
     flex: 0 0 calc((100% / var(--dsn-width-item)) - var(--dsn-col-item));

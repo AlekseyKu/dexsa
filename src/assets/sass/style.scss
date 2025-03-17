@@ -1,18 +1,27 @@
-/*-----------------------------------------------------------
+// src/assets/sass/style.scss
 
-  Template Name: Droow React
-  Template URI: http://theme.dsngrid.com/droow
-  Author: design_grid
-  Author URI: https://themeforest.net/user/design_grid
-  Version: 1.0.0
+// 1. Переменные и утилиты (базовые зависимости)
+@use "variables-site/variables-site" as *;
+@use "mixins/mixins-master" as *;
+@use "mixins/utilities" as *;
 
--------------------------------------------------------------*/
+// 2. Нормализация и базовые стили
+@use "normalize" as *;
 
-@import "helper";
-@import "global";
-@import "pagination/pagination";
-@import "forms/forms";
-@import "blocks/scrollbar";
+// 3. Глобальные стили и хелперы
+@use "global" as *;
+@use "helper" as *;
+
+// 4. Модульные стили
+@use "pagination/pagination" as *;
+@use "forms/forms" as *;
+@use "blocks/scrollbar" as *;
+@use "typography/typography" as *;
+
+// 5. Стили компонентов
+// @use "../../components/testimonial/style" as *;
+@use "../../layout/customCursorStyle" as *;
+
 
 :root, :root .v-light, :root .v-light-head {
   --bg-color: #f9f9f9;
@@ -93,15 +102,8 @@
     --title-heading: 38px;
     --title-section: 28px;
     --box-padding: 40px 30px;
-
   }
-
-
 }
-
-@import "typography/typography";
-@import "normalize";
-
 
 html {
   font-size: $font-size-base;

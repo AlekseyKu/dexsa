@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './style.scss'
+// import './style.scss'
 import TeamItem from './TeamItem';
 import 'swiper/css';
 

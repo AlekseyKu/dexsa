@@ -1,5 +1,5 @@
 import React, {useCallback, useLayoutEffect, useRef, useState} from 'react';
-import './style.scss';
+// import './style.scss';
 import Dropdown from "./Dropdown";
 import Toggle from "./Toggle";
 import {Link} from "react-router-dom";

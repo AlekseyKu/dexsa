@@ -1,3 +1,4 @@
-@import "mixins/mixins-master";
-@import "mixins/utilities";
-@import "variables-site/variables-site";
+// src/assets/sass/helper.scss
+@use "variables-site/variables-site" as *;
+@use "mixins/mixins-master" as *;
+@use "mixins/utilities" as *;

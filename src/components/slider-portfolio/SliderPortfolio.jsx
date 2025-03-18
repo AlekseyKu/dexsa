@@ -1,3 +1,4 @@
+// src\components\slider-portfolio\SliderPortfolio.jsx
 import React, {useEffect, useRef, useState} from 'react';
 import {getPortfolioData} from "../../api/portfolio/PortfolioData";
 import {Controller, Parallax} from "swiper";

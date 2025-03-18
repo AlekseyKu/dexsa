@@ -28,9 +28,10 @@ function MenuContent({className}) {
                 <div className="nav-content mt-30">
                     <h5 className="sm-title-block mb-10">Contact</h5>
                     <p className="links over-hidden mb-1">
-                        <a className="link-hover" href="tel:+00 (2)012 3321" data-hover-text="+00 (2)012 3321">
+                        {/* <a className="link-hover" href="tel:+00 (2)012 3321" data-hover-text="+00 (2)012 3321">
                             +47 777 7755
-                        </a>
+                        </a> */}
+                        <a href="https://telegram.im/@dexstudioapp" target="_blank" rel="noreferrer">dexstudioapp</a>
                     </p>
                     <p className="links over-hidden">
                         <a className="link-hover" href="mailto:info@dexsa.sitem"

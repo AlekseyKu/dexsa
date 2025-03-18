@@ -10,19 +10,29 @@ import {Pagination, SwiperOptions} from "swiper";
 
 const TeamDetails = [
     {
-        src: "/assets/img/team/1.png",
-        title: "Blake Hamilton",
-        subTitle: "Project manager",
+        src: "/assets/img/team/team_01.png",
+        title: "Alexandr Guskov",
+        subTitle: "CEO, Product Manager",
     },
     {
-        src: "/assets/img/team/2.png",
-        title: "John Doe",
-        subTitle: "Engineer",
+        src: "/assets/img/team/team_02.png",
+        title: "Aleksei Kuchev",
+        subTitle: "CTO, Main Developer",
     },
     {
-        src: "/assets/img/team/3.png",
-        title: "Ira Mulanax",
-        subTitle: "Founder",
+        src: "/assets/img/team/team_03.png",
+        title: "Daniil Tadorov",
+        subTitle: "Head of Design",
+    },
+    {
+        src: "/assets/img/team/team_04.png",
+        title: "Anastasia Kucheva",
+        subTitle: "CMO",
+    },
+    {
+        src: "/assets/img/team/team_05.png",
+        title: "Hang Thi Y Nhi",
+        subTitle: "Project Administrator",
     }
 
 ]
@@ -55,10 +65,10 @@ const Team = ({className, desktop, mobile, tablet, ...restProps}: SwiperOptions)
 
 Team.defaultProps = {
     desktop: {
-        slidesPerView: 2.5
+        slidesPerView: 4
     },
     tablet: {
-        slidesPerView: 2
+        slidesPerView: 3
 
     },
     mobile: {

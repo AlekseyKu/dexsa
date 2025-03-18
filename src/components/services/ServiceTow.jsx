@@ -8,21 +8,21 @@ import {dsnCN} from "../../hooks/helper";
 
 const ServicesDetails = [
     {
-        title: "DIGITAL PRODUCTS",
-        description: `As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.`,
+        title: "BRANDING & STRATEGY",
+        description: `We create powerful brands that stand out. From unique identity design to positioning and communication strategies, we ensure your brand is not just present but truly memorable.`,
     },
     {
-        title: "UI-UX DESIGN",
-        description: `As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.`,
+        title: "UI/UX DESIGN",
+        description: `Not just beautiful—intuitive and effective. We design user experiences that engage audiences and increase conversions. Our focus is on usability, trends, and emotional design to create seamless interactions.`,
     },
     {
-        title: "WEB DEVELOPMENT",
-        description: `As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.`,
+        title: "AI & BUSINESS AUTOMATION",
+        description: `The future belongs to intelligent technologies. We develop AI chatbots, Telegram bots, voice assistants, and business process automation systems. Reduce routine tasks, boost efficiency, and optimize your workflow with smart automation.`,
     },
     {
-        title: "WEB DEVELOPMENT",
-        description: `As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.`,
-    }
+        title: "DIGITAL PRODUCTS & WEB DEVELOPMENT",
+        description: `We build cutting-edge digital solutions and powerful web applications. From Telegram bots to complex CRM systems, corporate websites to marketplaces and SaaS products, we leverage the latest technologies to make your business faster, smarter, and more efficient.`,
+    },
 ]
 
 const ServiceTow = ({className, ...restProps}: DsnGridProps) => {

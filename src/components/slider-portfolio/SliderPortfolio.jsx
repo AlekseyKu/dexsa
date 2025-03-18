@@ -40,6 +40,34 @@ function SliderPortfolio({className, typeBg, parallax, tag: Tag = 'div'}: Slider
 
     let tl = gsap.timeline();
 
+    // Добавляем обработчик события колесика мыши
+    useEffect(() => {
+        const handleWheel = (event) => {
+            event.preventDefault(); // Отключаем стандартную прокрутку страницы
+            if (bgSwiper) {
+                if (event.deltaY > 0) {
+                    // Прокрутка вниз - следующий слайд
+                    bgSwiper.slideNext();
+                } else {
+                    // Прокрутка вверх - предыдущий слайд
+                    bgSwiper.slidePrev();
+                }
+            }
+        };
+
+        const sliderContainer = rootSlider.current;
+        if (sliderContainer) {
+            sliderContainer.addEventListener('wheel', handleWheel, { passive: false });
+        }
+
+        return () => {
+            if (sliderContainer) {
+                sliderContainer.removeEventListener('wheel', handleWheel);
+            }
+        };
+    }, [bgSwiper]); // Зависимость от bgSwiper, чтобы обработчик обновлялся при изменении Swiper
+
+
 
     useEffect(() => {
 

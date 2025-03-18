@@ -211,6 +211,10 @@
       margin-left: auto;
       margin-right: 0;
     }
+    &.dsn-center-container {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   @include media_1400(min) {
     width: calc(100% - ((100vw - 1320px + var(--bs-gutter-x)) / 2));

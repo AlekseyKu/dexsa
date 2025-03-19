@@ -1,3 +1,4 @@
+// src\App.js
 import React, {useLayoutEffect} from "react";
 // Importing the Bootstrap CSS
 import 'swiper/css/pagination';

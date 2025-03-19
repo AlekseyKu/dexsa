@@ -26,16 +26,17 @@
       position: relative;
       z-index: 2;
       fill: $heading-color;
-      width: 8px;
+      width: 12px;
       cursor: pointer;
-      transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+      transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
     }
 
     &:hover {
 
       svg {
         color: $heading-color;
-        transform: rotate(360deg);
+        // transform: rotate(360deg);
+        transform: scale(2);
       }
     }
   }

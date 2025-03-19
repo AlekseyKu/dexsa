@@ -5,9 +5,9 @@ import {dsnCN} from "../../hooks/helper";
 
 function MenuFooter({className, ...restProps}) {
     const paginate = [
-        {link: "/portfolio", title: "Portfolio"},
-        {link: "/about", title: "Abut"},
-        {link: "/blog-details", title: "News"},
+        {link: "/", title: "Projects"},
+        {link: "/", title: "Works"},
+        {link: "/about", title: "About"},
         {link: "/contact", title: "Contact"}
     ];
     return (

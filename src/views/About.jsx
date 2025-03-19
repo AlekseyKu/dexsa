@@ -1,9 +1,10 @@
+// src\views\About.jsx
 import React from 'react';
 
 import {Container} from "react-bootstrap";
 import FadeUpTrigger from "../animation/FadeUpTrigger";
 
-import HeaderNormal from "../components/header/HeaderNormal";
+// import HeaderNormal from "../components/header/HeaderNormal";
 import BoxRight from "../components/box-right/BoxRight";
 import TitleSection from "../components/heading/TitleSection";
 import ServiceTow from "../components/services/ServiceTow";
@@ -15,11 +16,11 @@ import TestimonialTow from "../components/testimonial/TestimonialTow";
 import {Helmet} from "react-helmet";
 
 
-const headerContent = {
-    title: 'THE ART OF LUXURY APPAREL',
-    description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis mollitia libero quis odio unde ab
-                officia est dolor.`
-}
+// const headerContent = {
+//     title: 'THE ART OF LUXURY APPAREL',
+//     description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis mollitia libero quis odio unde ab
+//                 officia est dolor.`
+// }
 
 function About() {
 
@@ -31,16 +32,16 @@ function About() {
             </Helmet>
 
             {/*Start Header*/}
-            <HeaderNormal className="background-section" description={headerContent.description}>
+            {/* <HeaderNormal className="background-section" description={headerContent.description}>
                 {headerContent.title}
-            </HeaderNormal>
+            </HeaderNormal> */}
 
             {/*Start Box Right Info*/}
             <BoxRight className="mb-section text-center" src="/assets/img/about/team_01.webp"
                       parallaxFrom={{scale: 1.2}} parallax={{scale: 1}} overlay={4}
             >
                 <FadeUpTrigger>
-                    <h3>Hello we are, DEXSA</h3>
+                    <h3>Hello we are, <span class="highlight">DEXSA</span></h3>
                     <p className="mt-30 m-w750 dsn-auto">
                         We are creating digital solutions of the future today. DEXSA is a team of engineers, 
                         designers and strategists who turn innovations into real products. 

@@ -9,7 +9,7 @@ import Brand from "../brand/Brand";
 import NavLink from "../button/NavLink";
 import MenuFooter from "./MenuFooter";
 import ContentFooter from "./ContentFooter";
-import AddressFooter from "./AddressFooter";
+// import AddressFooter from "./AddressFooter";
 import Copyright from "./Copyright";
 import {dsnCN} from "../../hooks/helper";
 
@@ -25,9 +25,12 @@ function Footer({className, ...restProps}) {
                         {/*Band & Social*/}
                         <div className='dsn-col-footer'>
                             <NavLink to="/">
-                                <Brand width="90px"/>
+                                <Brand width="200px"/>
                             </NavLink>
                             <SocialMedia className="mt-20"/>
+                        </div>
+
+                        <div>
                         </div>
 
                         {/*Navigation*/}
@@ -43,10 +46,10 @@ function Footer({className, ...restProps}) {
                         </div>
 
 
-                        <div className='dsn-col-footer'>
+                        {/* <div className='dsn-col-footer'>
                             <h4 className="footer-title">Address</h4>
                             <AddressFooter/>
-                        </div>
+                        </div> */}
                     </DsnGrid>
                 </div>
                 <Copyright className="pt-40 pb-40"/>

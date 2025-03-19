@@ -7,7 +7,8 @@
     width: 30px;
     height: 30px;
     pointer-events: none;
-    background-color: #fff;
+    // background-color: #fff;
+    background-color: $assistant-color;
     border-radius: 50%;
     transform-origin: left top;
     z-index: 999999;

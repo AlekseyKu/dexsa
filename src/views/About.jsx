@@ -37,7 +37,7 @@ function About() {
             </HeaderNormal> */}
 
             {/*Start Box Right Info*/}
-            <BoxRight className="mb-section text-center" src="/assets/img/about/team_01.webp"
+            <BoxRight className="mb-section text-center" src="/assets/img/about/About.webp"
                       parallaxFrom={{scale: 1.2}} parallax={{scale: 1}} overlay={4}
             >
                 <FadeUpTrigger>

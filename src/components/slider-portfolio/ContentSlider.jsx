@@ -1,3 +1,4 @@
+// src\components\slider-portfolio\ContentSlider.jsx
 import React from 'react';
 import MetaPost from "../header/MetaPost";
 import NavLink from "../button/NavLink";
@@ -19,8 +20,15 @@ function ContentSlider({data , activeClass} , ref) {
                     <h1  className="title-heading"><NavLink to={getPortfolioLink(item)}>{item.title}</NavLink>
                     </h1>}
                     {item.description && <div className="dsn-description mt-30">{item.description}</div>}
-                    <ButtonDefault to={getPortfolioLink(item)} className="mt-30" text="View Case"
-                                   icon={faAngleRight}/>
+                    {item.id !== 1 && ( // Добавляем условие: кнопка рендерится только если id не равен 1
+                        <ButtonDefault 
+                            to={getPortfolioLink(item)} 
+                            className="mt-30" 
+                            // text="View Case"
+                            text={item.buttonText || "View Case"}
+                            icon={faAngleRight}
+                        />
+                    )}
                 </div>
             )}
 

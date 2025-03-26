@@ -9,36 +9,31 @@ const menuContent = [
     {
         name: "Home", to: "/"
     },
-    // {
-    //     name: "Home",
-    //     dropdownMenu: [
-    //         {name: "Main Demo", to: "/"},
-    //         {name: "One Page 2", to: "/demo-2"},
-    //         {name: "One Page 3", to: "/demo-3"},
-    //     ]
-    // },
     {
-        name: "Portfolio",
+        name: "Projects",
         dropdownMenu: [
             {
-                name: "Sliders",
+                name: "Major Projects",
                 dropdownMenu: [
-                    {name: "Full Screen", to: "/slider"},
-                    {name: "Padding Screen", to: "/slider-2"},
-                    {name: "Half Screen", to: "/slider-3"}
+                    {name: "I Promise You", to: "/projects/ipu"},
+                    {name: "We Remember You", to: "/projects/weru"},
                 ]
-            }, {
-                name: "Grids",
+            }, 
+            {
+                name: "For Business",
                 dropdownMenu: [
-                    {name: "Grid 2 Columns", to: "/portfolio"},
-                    {name: "Grid 3 Columns", to: "/portfolio-2"},
+                    {name: "Process Automation", to: '/portfolio/under-armour'},
+                    {name: "Web Development", to: '/portfolio/under-armour'},
+                    {name: "Technical Support", to: '/portfolio/under-armour'},
                 ]
             },
-
+            {
+                name: "For Investors", to: '/portfolio/re-styling',
+            },
         ]
     },
     {
-        name: "Works",
+        name: "Blog",
         dropdownMenu: [
             {
                 name: "Works 01 - 05",
@@ -63,6 +58,58 @@ const menuContent = [
     },
     {name: "About", to: "/about"},
     {name: "Contact", to: "/contact"},
+    // {
+    //     name: "Home",
+    //     dropdownMenu: [
+    //         {name: "Main Demo", to: "/"},
+    //         {name: "One Page 2", to: "/demo-2"},
+    //         {name: "One Page 3", to: "/demo-3"},
+    //     ]
+    // },
+    // {
+    //     name: "Portfolio",
+    //     dropdownMenu: [
+    //         {
+    //             name: "Sliders",
+    //             dropdownMenu: [
+    //                 {name: "Full Screen", to: "/slider"},
+    //                 {name: "Padding Screen", to: "/slider-2"},
+    //                 {name: "Half Screen", to: "/slider-3"}
+    //             ]
+    //         }, {
+    //             name: "Grids",
+    //             dropdownMenu: [
+    //                 {name: "Grid 2 Columns", to: "/portfolio"},
+    //                 {name: "Grid 3 Columns", to: "/portfolio-2"},
+    //             ]
+    //         },
+
+    //     ]
+    // },
+    // {
+    //     name: "Works",
+    //     dropdownMenu: [
+    //         {
+    //             name: "Works 01 - 05",
+    //             dropdownMenu: [
+    //                 {name: "Time Tag Watch", to: "/portfolio/time-tag-watch"},
+    //                 {name: "Under Armour", to: '/portfolio/under-armour'},
+    //                 {name: "Re Styling", to: '/portfolio/re-styling'},
+    //                 {name: "Toast 2019 Reel", to: '/portfolio/toast-2019-reel'},
+    //                 {name: "What If Gold", to: '/portfolio/what-if-gold'},
+    //             ]
+    //         }, {
+    //             name: "Works 05 - 09",
+    //             dropdownMenu: [
+    //                 {name: "Nile - Kabutha", to: "/portfolio/nile-kabutha"},
+    //                 {name: "Sleep Walker", to: '/portfolio/sleep-walker'},
+    //                 {name: "Novara Conic", to: '/portfolio/novara-conic'},
+    //                 {name: "Bastian Bux", to: '/portfolio/bastian-bux'},
+
+    //             ]
+    //         },
+    //     ]
+    // },
 ];
 
 const DroowMenu = ({hamburger}) => {

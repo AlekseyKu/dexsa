@@ -1,7 +1,6 @@
 import React from 'react';
 import {getPortfolioItem} from "../../api/portfolio/PortfolioData";
 
-
 import {Container} from "react-bootstrap";
 import FadeUpTrigger from "../../animation/FadeUpTrigger";
 import TextTrigger from "../../animation/TextTrigger";

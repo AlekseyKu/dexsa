@@ -76,3 +76,13 @@ Header Description in Header Normal Tow
     top: 50%;
   }
 }
+.project-header {
+  &hero-img {
+    width: 70%;
+    left: 20%;
+    top:20%;
+    height: 60%;
+    margin: 0;
+  }
+
+}

@@ -1,3 +1,4 @@
+// no used?
 import React from 'react'
 import './style.scss'
 import 'swiper/css';

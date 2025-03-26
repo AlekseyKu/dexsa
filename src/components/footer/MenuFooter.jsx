@@ -6,7 +6,7 @@ import {dsnCN} from "../../hooks/helper";
 function MenuFooter({className, ...restProps}) {
     const paginate = [
         {link: "/", title: "Projects"},
-        {link: "/", title: "Works"},
+        {link: "/", title: "Blog"},
         {link: "/about", title: "About"},
         {link: "/contact", title: "Contact"}
     ];
@@ -15,7 +15,7 @@ function MenuFooter({className, ...restProps}) {
             {
                 paginate.map(
                     (item, i) =>
-                        <li key={i}><NavLink to={item.link}>{item.title}</NavLink></li>
+                        <li key={i}><NavLink to={item.link} className="nav-link-after">{item.title}</NavLink></li>
                 )
             }
         </ul>

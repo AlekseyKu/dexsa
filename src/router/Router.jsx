@@ -1,11 +1,15 @@
+// src\router\Router.jsx
 import React, {useState, Suspense} from "react";
 import {useSelector} from "react-redux";
+// import { RefObject } from 'react';
+
 import {Route, Routes} from "react-router-dom";
 import useEffectLocation from "../hooks/useEffectLocation";
+import { getProjectBySlug } from '../api/projects/ProjectsData';
 
 import './style.scss';
 
-const Scrollbar = React.lazy(() => import("smooth-scrollbar"));
+// const Scrollbar = React.lazy(() => import("smooth-scrollbar"));
 
 const MainDemo = React.lazy(() => import("../views/home/MainDemo"));
 const Demo2 = React.lazy(() => import("../views/home/Demo2"));
@@ -23,22 +27,30 @@ const About = React.lazy(() => import("../views/About"));
 const Contact = React.lazy(() => import("../views/Contact"));
 const BlogDetails = React.lazy(() => import("../views/blog/BlogDetails"));
 
+const Ipu = React.lazy(() => import("../views/projects/ipu"));
+const Weru = React.lazy(() => import("../views/projects/weru"));
+
+
+
 
 const Router = () => {
 
     const [transPage, setTransPage] = useState("in");
-    const scrollbar: React.MutableRefObject<null | Scrollbar> = useSelector(state => state.scrollbar);
+    const scrollbar = useSelector(state => state.scrollbar);
 
     const location = useEffectLocation((l) => {
         setTransPage("out");
-    })
+    });
 
     const onAnimateEnd = () => {
         if (transPage !== "out") return;
         scrollbar.current?.scrollTo(0, 0, 0);
         window.scrollTo({left: 0, top: 0});
         setTransPage("in");
-    }
+    };
+
+    const ipuData = getProjectBySlug('ipu');
+    const weruData = getProjectBySlug('weru');
 
 
     return (
@@ -64,6 +76,11 @@ const Router = () => {
                     <Route exact path="/about" element={<About/>}/>
                     <Route exact path="/contact" element={<Contact/>}/>
                     <Route exact path="/blog-details" element={<BlogDetails/>}/>
+
+                    <Route exact path="/projects/ipu" element={<Ipu data={ipuData}/>}/>
+                    <Route exact path="/projects/weru" element={<Weru data={weruData}/>}/>
+
+
                     <Route exact path="*" element={<h1>Not Found</h1>}/>
                 </Routes>
             </Suspense>

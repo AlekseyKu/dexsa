@@ -25,7 +25,7 @@ function Footer({className, ...restProps}) {
                         {/*Band & Social*/}
                         <div className='dsn-col-footer'>
                             <NavLink to="/">
-                                <Brand width="200px"/>
+                                <Brand width="250px"/>
                             </NavLink>
                             <SocialMedia className="mt-20"/>
                         </div>

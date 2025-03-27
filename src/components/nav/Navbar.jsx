@@ -1,3 +1,4 @@
+// src\components\nav\Navbar.jsx
 import React, {useCallback, useLayoutEffect, useRef, useState} from 'react';
 import './style.scss';
 import Dropdown from "./Dropdown";
@@ -5,6 +6,7 @@ import Toggle from "./Toggle";
 import {Link} from "react-router-dom";
 import useEffectScroll from "../../hooks/useEffectScroll";
 import {dsnCN} from "../../hooks/helper";
+import SoundControl from '../sound/SoundControl';
 
 
 const Navbar = ({children, textOpen, textMenu, textClose, hamburger}) => {
@@ -86,15 +88,20 @@ const Navbar = ({children, textOpen, textMenu, textClose, hamburger}) => {
     return (
         <header className={dsnCN('site-header container-fluid', typeNave)} ref={nav}>
             {children}
-            {typeNave && <Toggle
-                textOpen={textOpen}
-                textMenu={textMenu}
-                textClose={textClose}
-                targetNav={nav}
-                reserved={reserved}
-                setReserved={setReserved}
-                removeOpenMenu={removeOpenMenu}
-            />}
+            <div className="nav-controls">
+                <SoundControl />
+                {typeNave && (
+                    <Toggle
+                        textOpen={textOpen}
+                        textMenu={textMenu}
+                        textClose={textClose}
+                        targetNav={nav}
+                        reserved={reserved}
+                        setReserved={setReserved}
+                        removeOpenMenu={removeOpenMenu}
+                    />
+                )}
+            </div>
             <div className="bg background-section"/>
             <div className="bg background-main" onTransitionEnd={TransEnd}/>
 

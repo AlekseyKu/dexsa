@@ -5,7 +5,7 @@ import {useSelector} from "react-redux";
 
 import {Route, Routes} from "react-router-dom";
 import useEffectLocation from "../hooks/useEffectLocation";
-import { getProjectBySlug } from '../api/projects/ProjectsData';
+import { getProjectsBySlug } from '../api/projects/ProjectsData';
 
 import './style.scss';
 
@@ -19,9 +19,9 @@ const SliderOne = React.lazy(() => import("../views/slider/SliderOne"));
 const SliderTow = React.lazy(() => import("../views/slider/SliderTow"));
 const SliderThree = React.lazy(() => import("../views/slider/SliderThree"));
 
-const Work = React.lazy(() => import("../views/Work"));
-const WorkTow = React.lazy(() => import("../views/WorkTow"));
-const ProjectDetails = React.lazy(() => import("../views/portfolio/ProjectDetails"));
+// const Work = React.lazy(() => import("../views/Work"));
+// const WorkTow = React.lazy(() => import("../views/WorkTow"));
+// const ProjectDetails = React.lazy(() => import("../views/portfolio/ProjectDetails"));
 
 const About = React.lazy(() => import("../views/About"));
 const Contact = React.lazy(() => import("../views/Contact"));
@@ -29,6 +29,9 @@ const BlogDetails = React.lazy(() => import("../views/blog/BlogDetails"));
 
 const Ipu = React.lazy(() => import("../views/projects/ipu"));
 const Weru = React.lazy(() => import("../views/projects/weru"));
+
+const Projects = React.lazy(() => import("../views/Work"));
+const ProjectDetails = React.lazy(() => import("../views/projects/ProjectDetails"));
 
 
 
@@ -49,8 +52,8 @@ const Router = () => {
         setTransPage("in");
     };
 
-    const ipuData = getProjectBySlug('ipu');
-    const weruData = getProjectBySlug('weru');
+    const ipuData = getProjectsBySlug('ipu');
+    const weruData = getProjectsBySlug('weru');
 
 
     return (
@@ -69,13 +72,17 @@ const Router = () => {
                     <Route path="/slider-2" element={<SliderTow/>}/>
                     <Route path="/slider-3" element={<SliderThree/>}/>
 
-                    <Route exact path="/portfolio" element={<Work/>}/>
-                    <Route exact path="/portfolio-2" element={<WorkTow/>}/>
-                    <Route exact path="/portfolio/:slug" element={<ProjectDetails/>}/>
+                    {/* <Route exact path="/portfolio" element={<Work/>}/> */}
+                    {/* <Route exact path="/portfolio-2" element={<WorkTow/>}/> */}
+                    {/* <Route exact path="/portfolio/:slug" element={<ProjectDetails/>}/> */}
 
                     <Route exact path="/about" element={<About/>}/>
                     <Route exact path="/contact" element={<Contact/>}/>
                     <Route exact path="/blog-details" element={<BlogDetails/>}/>
+
+                    <Route exact path="/projects" element={<Projects/>}/>
+                    <Route exact path="/projects/:slug" element={<ProjectDetails/>}/>
+
 
                     <Route exact path="/projects/ipu" element={<Ipu data={ipuData}/>}/>
                     <Route exact path="/projects/weru" element={<Weru data={weruData}/>}/>

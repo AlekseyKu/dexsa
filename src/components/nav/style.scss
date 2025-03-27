@@ -21,6 +21,25 @@
     z-index: 1;
   }
 
+  .nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px; // Увеличиваем отступ между кнопками для лучшего визуального разделения
+    z-index: 1000;
+
+    .navbar-toggle {
+      display: flex;
+      align-items: center;
+      // gap: 5px; // Отступ между иконкой меню и текстом "Menu"
+    }
+
+    .sound-control {
+      display: flex;
+      align-items: center;
+      padding-bottom: 5px;
+    }
+  }
+
   ul.primary-nav {
     display: flex;
     padding-left: 0;

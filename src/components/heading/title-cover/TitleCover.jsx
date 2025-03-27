@@ -1,3 +1,4 @@
+// src\components\heading\title-cover\TitleCover.jsx
 import React from 'react';
 import './style.scss';
 import MoveTrigger from "../../../animation/MoveTrigger";

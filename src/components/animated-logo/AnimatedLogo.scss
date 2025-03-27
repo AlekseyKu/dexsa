@@ -1,0 +1,35 @@
+// src\components\AnimatedLogo.scss
+
+.animated-logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif; // Замени на шрифт, который используется в твоём проекте
+    font-size: 3rem; // Размер логотипа (можно настроить)
+    color: #fff; // Цвет текста (соответствует тёмной теме твоего сайта)
+    user-select: none; // Отключаем выделение текста
+    margin-left: 20px;
+
+    .bracket {
+        font-weight: 500;
+        font-size: 3.5rem; // Скобки чуть больше текста
+        margin-bottom: 10px;
+    }
+
+    .logo-text {
+        // margin: 0 10px; // Отступы между скобками и текстом
+        letter-spacing: 2px; // Расстояние между буквами
+        font-weight: 500; // Жирный текст
+    }
+
+    .char {
+        display: inline-block; // Для анимации букв
+    }
+
+    .v-light & {
+        color: #000;
+    }
+
+    .v-dark & {
+        color: #fff;
+    }
+}

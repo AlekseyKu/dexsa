@@ -22,9 +22,9 @@ const menuContent = [
             {
                 name: "For Business",
                 dropdownMenu: [
-                    {name: "Process Automation", to: '/portfolio/under-armour'},
-                    {name: "Web Development", to: '/portfolio/under-armour'},
-                    {name: "Technical Support", to: '/portfolio/under-armour'},
+                    {name: "Process Automation", to: '/projects/bizProcAuto'},
+                    {name: "Web Development", to: '/project/bizWebDev'},
+                    {name: "Technical Support", to: '/project/bizTechSupport'},
                 ]
             },
             {

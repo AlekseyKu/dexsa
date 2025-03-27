@@ -40,11 +40,21 @@ function SliderPortfolio({className, typeBg, parallax, tag: Tag = 'div'}: Slider
 
     let tl = gsap.timeline();
 
-    // Добавляем обработчик события колесика мыши
+    // Добавляем обработчик события колесика мыши с задержкой после скролла
     useEffect(() => {
+        let isScrolling = false; // Флаг для отслеживания состояния прокрутки
+        const scrollDelay = 500; // Задержка в миллисекундах (500 мс)
+
         const handleWheel = (event) => {
             event.preventDefault(); // Отключаем стандартную прокрутку страницы
+
+            // Если прокрутка заблокирована, игнорируем событие
+            if (isScrolling) return;
+
             if (bgSwiper) {
+                // Блокируем новые переключения
+                isScrolling = true;
+
                 if (event.deltaY > 0) {
                     // Прокрутка вниз - следующий слайд
                     bgSwiper.slideNext();
@@ -52,6 +62,11 @@ function SliderPortfolio({className, typeBg, parallax, tag: Tag = 'div'}: Slider
                     // Прокрутка вверх - предыдущий слайд
                     bgSwiper.slidePrev();
                 }
+
+                // Разблокируем прокрутку после заданной задержки
+                setTimeout(() => {
+                    isScrolling = false;
+                }, scrollDelay);
             }
         };
 
@@ -66,7 +81,6 @@ function SliderPortfolio({className, typeBg, parallax, tag: Tag = 'div'}: Slider
             }
         };
     }, [bgSwiper]); // Зависимость от bgSwiper, чтобы обработчик обновлялся при изменении Swiper
-
 
 
     useEffect(() => {

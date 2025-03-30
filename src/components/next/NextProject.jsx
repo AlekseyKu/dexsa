@@ -8,7 +8,8 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import {Container} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import BgImage from "../header/BgImage";
-import {getPortfolioLink} from "../../api/portfolio/PortfolioData";
+// import {getPortfolioLink} from "../../api/portfolio/PortfolioData";
+import {getProjectsLink} from '../../api/projects/ProjectsData';
 import {dsnCN} from "../../hooks/helper";
 
 
@@ -61,7 +62,7 @@ function NextProject({height, attrContent, overlay, heroContent, to, className})
                 heroContent &&
                 <Container fluid  {...attrContent} className="hero-content" ref={content}>
                     {title &&
-                    <Link to={to || getPortfolioLink(heroContent)}><h1 className="title-heading">{title}</h1></Link>}
+                    <Link to={to || getProjectsLink(heroContent)}><h1 className="title-heading">{title}</h1></Link>}
                     <p className="mt-30 h6">Next Project</p>
                 </Container>
             }

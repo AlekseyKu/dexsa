@@ -1,3 +1,4 @@
+// src\components\header\BgImage.jsx
 import React from "react";
 import styled from "styled-components";
 import LazyImg from "../LazyImg";

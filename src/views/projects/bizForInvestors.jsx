@@ -1,4 +1,4 @@
-// src\views\projects\ipu.jsx
+// src\views\projects\bizForInvestors.jsx
 import React from 'react';
 // import {getPortfolioItem} from "../../api/portfolio/PortfolioData";
 import {getProjectsItem} from '../../api/projects/ProjectsData';
@@ -24,7 +24,7 @@ import NextProject from "../../components/next/NextProject";
 import {Helmet} from "react-helmet";
 
 
-const Ipu = ({data}) => {
+const Data = ({data}) => {
 
     const nextData = getProjectsItem(2);
 
@@ -32,8 +32,8 @@ const Ipu = ({data}) => {
     return (
         <React.Fragment>
             <Helmet>
-                <title>DEXSA - {data.title} </title>
-                <meta name="description" content={data.description}/>
+                <title>DEXSA – For Investors</title>
+                <meta name="description" content="Investment opportunities in IPU and WERU by DEXSTUDIOAPP"/>
             </Helmet>
 
             <HeaderHalf 
@@ -158,4 +158,4 @@ const Ipu = ({data}) => {
 }
 
 
-export default Ipu;
+export default Data;

@@ -22,40 +22,40 @@ const menuContent = [
             {
                 name: "For Business",
                 dropdownMenu: [
-                    {name: "Process Automation", to: '/projects/bizProcAuto'},
-                    {name: "Web Development", to: '/project/bizWebDev'},
-                    {name: "Technical Support", to: '/project/bizTechSupport'},
+                    {name: "Process Automation", to: '/projects/process-automation'},
+                    {name: "Web Development", to: '/projects/web-development'},
+                    {name: "Technical Support", to: '/projects/it-support'},
                 ]
             },
             {
-                name: "For Investors", to: '/portfolio/re-styling',
+                name: "For Investors", to: '/projects/for-investors',
             },
         ]
     },
-    {
-        name: "Blog",
-        dropdownMenu: [
-            {
-                name: "Works 01 - 05",
-                dropdownMenu: [
-                    {name: "Time Tag Watch", to: "/portfolio/time-tag-watch"},
-                    {name: "Under Armour", to: '/portfolio/under-armour'},
-                    {name: "Re Styling", to: '/portfolio/re-styling'},
-                    {name: "Toast 2019 Reel", to: '/portfolio/toast-2019-reel'},
-                    {name: "What If Gold", to: '/portfolio/what-if-gold'},
-                ]
-            }, {
-                name: "Works 05 - 09",
-                dropdownMenu: [
-                    {name: "Nile - Kabutha", to: "/portfolio/nile-kabutha"},
-                    {name: "Sleep Walker", to: '/portfolio/sleep-walker'},
-                    {name: "Novara Conic", to: '/portfolio/novara-conic'},
-                    {name: "Bastian Bux", to: '/portfolio/bastian-bux'},
+    // {
+    //     name: "Blog",
+    //     dropdownMenu: [
+    //         {
+    //             name: "Works 01 - 05",
+    //             dropdownMenu: [
+    //                 {name: "Time Tag Watch", to: "/portfolio/time-tag-watch"},
+    //                 {name: "Under Armour", to: '/portfolio/under-armour'},
+    //                 {name: "Re Styling", to: '/portfolio/re-styling'},
+    //                 {name: "Toast 2019 Reel", to: '/portfolio/toast-2019-reel'},
+    //                 {name: "What If Gold", to: '/portfolio/what-if-gold'},
+    //             ]
+    //         }, {
+    //             name: "Works 05 - 09",
+    //             dropdownMenu: [
+    //                 {name: "Nile - Kabutha", to: "/portfolio/nile-kabutha"},
+    //                 {name: "Sleep Walker", to: '/portfolio/sleep-walker'},
+    //                 {name: "Novara Conic", to: '/portfolio/novara-conic'},
+    //                 {name: "Bastian Bux", to: '/portfolio/bastian-bux'},
 
-                ]
-            },
-        ]
-    },
+    //             ]
+    //         },
+    //     ]
+    // },
     {name: "About", to: "/about"},
     {name: "Contact", to: "/contact"},
     // {

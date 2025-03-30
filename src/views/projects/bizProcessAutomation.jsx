@@ -17,10 +17,10 @@ import TechStackSection from '../../components/services/TechStackSection';
 
 function BlogDetails({ props }) {
     const heroContent = {
-        title: "IT Support",
+        title: "BUSINESS PROCESS AUTOMATION",
         // date: 'March 27, 2025',
-        category: ["not just enablement"],
-        src: "/assets/img/project/bizItSupport.webp"
+        category: ["not just optimization"],
+        src: "/assets/img/project/bizProcessAutomation.webp"
     };
 
     return (
@@ -36,19 +36,15 @@ function BlogDetails({ props }) {
                 <DsnGrid>
                     <Container className="section-margin"> 
                         <p className="mb-10">
-                            At DEXSA, we do more than fix issues — we ensure your entire IT infrastructure runs smoothly, 
-                            securely, and without interruption. IT support isn’t just enablement — it’s proactive care, 
-                            strategic thinking, and 24/7 reliability.                       
+                            At DEXSA, we bring order to chaos. Business process automation isn’t just optimization — 
+                            it’s a full-scale rethinking of how your company operates. We eliminate routine tasks, 
+                            accelerate operations, and build systems that run 24/7 without failures or human error.
                         </p>
-                        <p className="mb-10">
-                            Our business isn’t just about providing IT support as a standalone service — we accompany our 
-                            clients throughout every project we deliver. Whether it’s a one-time request or a full-scale 
-                            solution, our team ensures your infrastructure is supported, stable, and ready for long-term success.
-                        </p>
+
                         <p>
-                            We've supported operations for global businesses, managing networks, cloud systems, endpoints, 
-                            and user environments. From real-time monitoring to help desk automation, from system upgrades 
-                            to cybersecurity — we know how to keep your tech ecosystem healthy, agile, and always on.
+                            We've automated operations for global retailers, manufacturers, IT teams, and real estate 
+                            developers. From order processing to internal logistics, from project management to CRM 
+                            integration — we know how to make your processes faster, more transparent, and more reliable.
                         </p>
                     </Container>
                     
@@ -90,11 +86,10 @@ function BlogDetails({ props }) {
 
                 <Container>
                     <TitleSection description="and now the question">
-                        Ready for Reliable IT?
+                        Ready to Automate?
                     </TitleSection>
                     <p>
-                        Contact us — we’ll assess your infrastructure, uncover vulnerabilities, and implement a support 
-                        strategy that keeps your systems secure, stable, and always running.                    
+                        Contact us — we'll audit your workflows, identify bottlenecks, and propose an automation architecture that scales with your business.
                     </p>
                 
                     <CommentForm className="mt-40"/>
@@ -102,8 +97,8 @@ function BlogDetails({ props }) {
             </Container>
             
 
-            <NextPage className="section-margin" text="Next Project" to="/projects/">
-                TODO
+            <NextPage className="section-margin" text="Next Project" to="/projects/web-development">
+                Web Development
             </NextPage>
             <Footer />
         </>

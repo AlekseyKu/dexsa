@@ -11,10 +11,10 @@
   &.service-one .service-item {
 
     @include media_991(min) {
-      padding: 50px 45px;
+      padding: 20px 15px;
     }
     @include media_991() {
-      padding: 30px 20px;
+      padding: 20px 10px;
     }
     @include media_768(min) {
       &:nth-of-type(even) {
@@ -26,6 +26,10 @@
       background: $assistant-color;
       box-shadow: 15px 15px 30px rgb(0 0 0 / 30%);
 
+    }
+
+    &.title-block {
+      font-size: 20px;
     }
 
 
@@ -53,7 +57,7 @@
 
     .icon {
       svg, img {
-        height: 75px;
+        height: 150px;
       }
     }
 

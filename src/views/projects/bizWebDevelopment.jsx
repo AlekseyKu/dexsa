@@ -17,10 +17,10 @@ import TechStackSection from '../../components/services/TechStackSection';
 
 function BlogDetails({ props }) {
     const heroContent = {
-        title: "IT Support",
+        title: "WEB DEVELOPMENT",
         // date: 'March 27, 2025',
-        category: ["not just enablement"],
-        src: "/assets/img/project/bizItSupport.webp"
+        category: ["not just websites"],
+        src: "/assets/img/project/bizWebDevelopment.webp"
     };
 
     return (
@@ -36,19 +36,14 @@ function BlogDetails({ props }) {
                 <DsnGrid>
                     <Container className="section-margin"> 
                         <p className="mb-10">
-                            At DEXSA, we do more than fix issues — we ensure your entire IT infrastructure runs smoothly, 
-                            securely, and without interruption. IT support isn’t just enablement — it’s proactive care, 
-                            strategic thinking, and 24/7 reliability.                       
-                        </p>
-                        <p className="mb-10">
-                            Our business isn’t just about providing IT support as a standalone service — we accompany our 
-                            clients throughout every project we deliver. Whether it’s a one-time request or a full-scale 
-                            solution, our team ensures your infrastructure is supported, stable, and ready for long-term success.
-                        </p>
+                            At DEXSA, we build more than websites — we engineer powerful digital experiences. Web development 
+                            isn’t just about code — it’s about solving real business problems with smart, scalable, 
+                            and secure technology.                        </p>
+
                         <p>
-                            We've supported operations for global businesses, managing networks, cloud systems, endpoints, 
-                            and user environments. From real-time monitoring to help desk automation, from system upgrades 
-                            to cybersecurity — we know how to keep your tech ecosystem healthy, agile, and always on.
+                            We've delivered web platforms for startups, enterprises, creative agencies, and e-commerce brands. 
+                            From responsive landing pages to complex web applications, from CMS integration to performance 
+                            optimization — we know how to craft fast, flexible, and future-proof solutions.
                         </p>
                     </Container>
                     
@@ -90,11 +85,11 @@ function BlogDetails({ props }) {
 
                 <Container>
                     <TitleSection description="and now the question">
-                        Ready for Reliable IT?
+                        Time to Transform?
                     </TitleSection>
                     <p>
-                        Contact us — we’ll assess your infrastructure, uncover vulnerabilities, and implement a support 
-                        strategy that keeps your systems secure, stable, and always running.                    
+                        Contact us — we’ll analyze your needs, uncover opportunities, and design a web solution that 
+                        scales with your business and delivers real impact.                    
                     </p>
                 
                     <CommentForm className="mt-40"/>
@@ -102,8 +97,8 @@ function BlogDetails({ props }) {
             </Container>
             
 
-            <NextPage className="section-margin" text="Next Project" to="/projects/">
-                TODO
+            <NextPage className="section-margin" text="Next Project" to="/projects/it-support">
+                IT Support
             </NextPage>
             <Footer />
         </>

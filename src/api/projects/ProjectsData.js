@@ -33,8 +33,8 @@ const data = [
         slug: 'process-automation',
         category: ['for Business'],
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
-        src: '/assets/img/project/bg_02.png',
-        srcSlider: '/assets/img/project/bg_02-min.png',
+        src: '/assets/img/project/biz.ProcessAutomation.webp',
+        srcSlider: '/assets/img/project/biz.ProcessAutomation.webp',
         overlay: 2,
         // buttonText: "Explore Project",
         // component: (props) => <Weru {...props} />
@@ -53,8 +53,8 @@ const data = [
     },
     {
         id: 5,
-        title: "Technical Support",
-        slug: 'technical-support',
+        title: "IT Support",
+        slug: 'it-support',
         category: ['for Business'],
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         src: '/assets/img/project/bg_02.png',
@@ -65,7 +65,7 @@ const data = [
     },
     {
         id: 6,
-        title: "For Investors",
+        title: "INVEST IN INNOVATION",
         slug: 'for-investors',
         category: ['for Investors'],
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',

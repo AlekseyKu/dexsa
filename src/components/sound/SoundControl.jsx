@@ -1,107 +1,101 @@
-// src\components\sound\SoundControl.jsx
+// src/components/sound/SoundControl.jsx
 import React, { useEffect, useRef, useState } from 'react';
 import { dsnCN } from '../../hooks/helper';
 import './style.scss';
 
+const wrapText = (text) =>
+  text.split('').map((char, i) => (
+    <span key={i} className="char">
+      {char}
+    </span>
+  ));
+
 const SoundControl = () => {
-    const [isMuted, setIsMuted] = useState(() => {
-        const storedValue = localStorage.getItem('isMuted');
-        return storedValue === null ? false : storedValue === 'true'; // По умолчанию звук включён
-    });
-    const [isPlaying, setIsPlaying] = useState(false);
-    const audioRef = useRef(null);
+  const [isMuted, setIsMuted] = useState(() => {
+    const storedValue = localStorage.getItem('isMuted');
+    return storedValue === null ? false : storedValue === 'true';
+  });
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef(null);
 
-    const tryPlay = () => {
-        if (audioRef.current) {
-            audioRef.current.play()
-                .then(() => {
-                    setIsPlaying(true);
-                })
-                .catch((error) => {
-                    console.log('Autoplay blocked by browser:', error);
-                    setIsPlaying(false);
-                });
-        }
-    };
+  const tryPlay = () => {
+    if (audioRef.current) {
+      audioRef.current
+        .play()
+        .then(() => setIsPlaying(true))
+        .catch(() => setIsPlaying(false));
+    }
+  };
 
-    // Управление воспроизведением при изменении isMuted
-    useEffect(() => {
-        localStorage.setItem('isMuted', isMuted.toString());
-        if (audioRef.current) {
-            if (isMuted) {
-                audioRef.current.pause();
-                setIsPlaying(false); // Устанавливаем isPlaying в false, если звук выключен
-            } else {
-                tryPlay();
-            }
-        }
-    }, [isMuted]);
+  useEffect(() => {
+    localStorage.setItem('isMuted', isMuted.toString());
+    if (audioRef.current) {
+      if (isMuted) {
+        audioRef.current.pause();
+        setIsPlaying(false);
+      } else {
+        tryPlay();
+      }
+    }
+  }, [isMuted]);
 
-    // Инициализация при монтировании
-    useEffect(() => {
-        const audio = audioRef.current;
-        if (audio) {
-            const handlePlay = () => setIsPlaying(true);
-            const handlePause = () => setIsPlaying(false);
-    
-            audio.addEventListener('play', handlePlay);
-            audio.addEventListener('pause', handlePause);
-    
-            if (!isMuted) {
-                tryPlay();
-            } else {
-                setIsPlaying(false);
-            }
-    
-            return () => {
-                audio.removeEventListener('play', handlePlay);
-                audio.removeEventListener('pause', handlePause);
-            };
-        }
-    }, [isMuted]);
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (audio) {
+      const handlePlay = () => setIsPlaying(true);
+      const handlePause = () => setIsPlaying(false);
 
-    const toggleSound = () => {
-        setIsMuted((prev) => !prev);
-    };
+      audio.addEventListener('play', handlePlay);
+      audio.addEventListener('pause', handlePause);
 
-    const handleKeyDown = (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            toggleSound();
-        }
-    };
+      if (!isMuted) tryPlay();
+      else setIsPlaying(false);
 
-    return (
-        <div className="sound-control">
-            <audio ref={audioRef} loop>
-                <source src="/assets/sound/Sound.mp3" type="audio/mpeg" />
-                Your browser does not support the audio element.
-            </audio>
+      return () => {
+        audio.removeEventListener('play', handlePlay);
+        audio.removeEventListener('pause', handlePause);
+      };
+    }
+  }, [isMuted]);
 
-            <div
-                className="sound-toggle-btn"
-                onClick={toggleSound}
-                onKeyDown={handleKeyDown}
-                role="button"
-                tabIndex={0}
-                title={isMuted ? 'Unmute' : 'Mute'}
-                aria-label={isMuted ? 'Unmute background music' : 'Mute background music'}
-            >
-                <svg
-                    className={dsnCN('equalizer-icon', isPlaying && 'playing')}
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                >
-                    <rect className="bar bar1" x="4" y="15" width="3" height="10" fill="currentColor" />
-                    <rect className="bar bar2" x="9" y="15" width="3" height="10" fill="currentColor" />
-                    <rect className="bar bar3" x="14" y="15" width="3" height="10" fill="currentColor" />
-                    <rect className="bar bar4" x="19" y="15" width="3" height="10" fill="currentColor" />
-                </svg>
-            </div>
+  const toggleSound = () => setIsMuted((prev) => !prev);
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggleSound();
+    }
+  };
+
+  const toggleClass = () => {
+    if (!isMuted && isPlaying) return 'open'; // playing → show Pause
+    return ''; // not playing → show Play
+  };
+
+  return (
+    <div className="sound-control">
+      <audio ref={audioRef} loop>
+        <source src="/assets/sound/Sound.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <div
+        className={dsnCN('sound-toggle-btn', toggleClass())}
+        onClick={toggleSound}
+        onKeyDown={handleKeyDown}
+        role="button"
+        tabIndex={0}
+        title={isMuted}
+        aria-label={isMuted}
+      >
+        <div className="toggle-text">
+          <div className="text-open">{wrapText('Play')}</div>
+          <div className="text-close">{wrapText('Pause')}</div>
+          <div className="text-menu">{wrapText('Sound')}</div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default SoundControl;

@@ -6,12 +6,12 @@ function InfoBox({className}) {
     return (
 
         <div className={dsnCN('box-info-contact', className)}>
-            <h3>Start a new project?</h3>
+            <h3>Looking to launch something new? We’re in!</h3>
             <h5 className="mt-30">Contact to us</h5>
             <p className="mt-10">
-                We are always happy to receive new projects and interesting ideas. 
-                Contact us to discuss how we can help you bring your ideas to life. 
-                We know how to make your project unique.
+                We’re always happy to connect around bold ideas and fresh projects.
+                Let’s talk and explore how we can bring your vision to life.
+                We know how to make your project stand out.
             </p>
 
             <ul className="mt-60">

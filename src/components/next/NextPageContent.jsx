@@ -3,7 +3,7 @@ import NextPage from "./NextPage";
 
 function NextPageContent({...restProps}) {
     return (
-        <NextPage to="/contact"  text="Dare and contact us immediately!" {...restProps}>
+        <NextPage to="/contact"  text="Reach out today and let’s talk!" {...restProps}>
             We are hiring
         </NextPage>
     );

@@ -1,22 +1,25 @@
+// src\components\testimonial\TestimonialItem.jsx
 import React from 'react'
 import LazyImg from "../LazyImg";
 
-function TestimonialItem({src, authorName, label, description}) {
+function TestimonialItem({ avatar, authorName, label, description }) {
     return (
-
         <div className="testimonial-item">
             <p className='mb-25'>{description}</p>
 
             <div className="author-box">
-                {src && <span className="avatar">
-                    <LazyImg className='cover-bg-img' src={src} alt={authorName}/>
-                </span>}
-                <h5 className="auth-info">{authorName}{(authorName && label) && ','} <span>{label}</span></h5>
-
+                {avatar && (
+                    <span className="avatar">
+                        <LazyImg className='cover-bg-img' src={avatar} alt={authorName} />
+                    </span>
+                )}
+                <div className="auth-info">
+                    <h5>{authorName}</h5>
+                    {label && <span>{label}</span>}
+                </div>
             </div>
         </div>
     )
 }
-
 
 export default TestimonialItem;

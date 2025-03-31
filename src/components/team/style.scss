@@ -16,6 +16,14 @@
     .box-content {
         position: relative;
         z-index: 1;
+        text-align: center; // Центрируем текст по горизонтали
+
+        h5, h6 {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: 1s cubic-bezier(0.645, 0, 0.355, 1);
+        }
 
         h5 {
             letter-spacing: -0.5px;
@@ -24,7 +32,6 @@
             margin-bottom: 5px;
             text-transform: uppercase;
             word-spacing: 4px;
-            transition: 1s cubic-bezier(0.645, 0, 0.355, 1);
         }
 
         h6 {
@@ -46,12 +53,8 @@
         }
 
         .box-content {
-            h5 {
-                transform: translateX(20px);
-            }
-
-            h6 {
-                transform: translateX(20px);
+            h5, h6 {
+                transform: translate(-50%, -50%);
             }
         }
     }

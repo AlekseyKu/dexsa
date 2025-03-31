@@ -16,6 +16,7 @@
       flex-wrap: wrap;
 
       .avatar {
+        margin-right: 20px;
         @include media_575(min) {
           width: 60px;
           height: 60px;
@@ -29,9 +30,9 @@
             margin-left: 15px;
           }
         }
-        @include media_575() {
-          display: none;
-        }
+        // @include media_575() {
+        //   display: none;
+        // }
       }
     }
   }

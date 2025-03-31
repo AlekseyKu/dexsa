@@ -37,16 +37,16 @@ function About() {
             </HeaderNormal> */}
 
             {/*Start Box Right Info*/}
-            <BoxRight className="mb-section text-center" src="/assets/img/about/About.webp"
+            <BoxRight className="mb-section text-center" src="/assets/img/about/AboutUs.webp"
                       parallaxFrom={{scale: 1.2}} parallax={{scale: 1}} overlay={4}
             >
                 <FadeUpTrigger>
-                    <h3>Hello we are, <span class="highlight">DEXSA</span></h3>
+                    <h3>Nice to meet you, we’re <span class="highlight">DEXSA</span></h3>
                     <p className="mt-30 m-w750 dsn-auto">
-                        We are creating digital solutions of the future today. DEXSA is a team of engineers, 
-                        designers and strategists who turn innovations into real products. 
-                        We work at the intersection of technology and creativity, creating web applications, 
-                        AI solutions and digital platforms that move the industry forward.
+                    We build digital solutions for the future — today.
+                    DEXSA is a team of engineers, designers, and strategists turning innovation into real-world products.
+                    At the intersection of tech and creativity, we craft next-gen web platforms, AI systems, 
+                    and digital tools that drive industries forward.
                     </p>
                 </FadeUpTrigger>
             </BoxRight>
@@ -64,8 +64,8 @@ function About() {
             {/*Start Team*/}
             <section className="section-margin background-section section-padding">
                 <Container className="dsn-center-container">
-                    <TitleSection description="our team">
-                        The best team ever!
+                    <TitleSection description="Visionaries, builders, and creators driving the future of digital innovation.">
+                        Meet the minds behind DEXSA
                     </TitleSection>
                     <Team grabCursor/>
                 </Container>
@@ -74,8 +74,8 @@ function About() {
 
             {/*Start Service Section*/}
             <Container className="section-margin">
-                <TitleSection description="Client see">
-                    Feedback from our clients.
+                <TitleSection description="Feedback">
+                    Proven Impact 
                 </TitleSection>
                 <TestimonialTow grabCursor loop/>
             </Container>
@@ -84,7 +84,7 @@ function About() {
             {/*Start Brand*/}
             <Container className="section-margin">
                 <TitleSection description="Our clients">
-                    Your successful, our <br/> reputation
+                Overall success defines <br/> our Reputation
                 </TitleSection>
                 <BrandClient
                     col={3}

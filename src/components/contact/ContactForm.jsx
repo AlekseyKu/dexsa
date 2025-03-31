@@ -32,25 +32,31 @@ function ContactForm({className}) {
 
     return (
         <div className={dsnCN('form-box', className)}>
-            <h3 className="mb-30">Write A Comment</h3>
+            <h3 className="mb-30">Get in Touch</h3>
             <form ref={form} onSubmit={sendEmail}>
                 <div className="input__wrap controls">
                     <div className="form-group">
                         <label>What's your name?</label>
-                        <input id="form_name" type="text" name="name" placeholder="Type your name"
+                        <input id="form_name" type="text" name="name" placeholder="Let us know who you are."
                                required="required"/>
                     </div>
 
                     <div className="form-group">
                         <label>What's your email address?</label>
-                        <input id="form_email" type="email" name="email" placeholder="Type your Email Address"
+                        <input id="form_email" type="email" name="email" placeholder="So we can get back to you."
                                required="required"/>
                     </div>
 
                     <div className="form-group">
-                        <label>What's up?</label>
+                        <label>Any contacts?</label>
+                        <input id="form_phone" type="phone" name="phone" placeholder="Your any messenger for quick communication"
+                               required="required"/>
+                    </div>
+
+                    <div className="form-group">
+                        <label>Tell us more</label>
                         <textarea id="form_message" className="form-control" name="message"
-                                  placeholder="Tell us about you and the world" required="required"
+                                  placeholder="What’s on your mind? Pitch your idea, ask a question, or just say hi." required="required"
                         />
                     </div>
 

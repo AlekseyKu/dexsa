@@ -29,11 +29,11 @@ const TeamDetails = [
         title: "Anastasia Kucheva",
         subTitle: "CMO",
     },
-    {
-        src: "/assets/img/team/team_05.png",
-        title: "Hang Thi Y Nhi",
-        subTitle: "Project Administrator",
-    }
+    // {
+    //     src: "/assets/img/team/team_05.png",
+    //     title: "Hang Thi Y Nhi",
+    //     subTitle: "Project Administrator",
+    // }
 
 ]
 

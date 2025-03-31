@@ -9,37 +9,37 @@ import LazyImg from "../LazyImg";
 
 const BrandDetails = [
     {
-        src: "/assets/img/about/client-logo/1.png",
+        src: "/assets/img/about/client-logo/svg/1.svg",
         title: "AUCHAN RETAIL",
         href: "https://www.auchan-retail.com/en/",
         linkText: "www.auchan-retail.com",
     },
     {
-        src: "/assets/img/about/client-logo/2.png",
+        src: "/assets/img/about/client-logo/svg/2.svg",
         title: "FPT Telecom",
         href: "https://fpt.vn/vi",
         linkText: "www.fpt.vn",
     },
     {
-        src: "/assets/img/about/client-logo/3.png",
+        src: "/assets/img/about/client-logo/svg/3.svg",
         title: "IN-CREDIBLE DIGITAL",
         href: "https://in-credible.digital/en/",
         linkText: "www.in-credible.digital",
     },
     {
-        src: "/assets/img/about/client-logo/4.png",
+        src: "/assets/img/about/client-logo/svg/4.svg",
         title: "ELEGANT CYPRUS PROPERTIES",
         href: "https://elegantcyprusproperties.com/",
         linkText: "www.elegantcyprusproperties.com",
     },
     {
-        src: "/assets/img/about/client-logo/5.png",
+        src: "/assets/img/about/client-logo/svg/5.svg",
         title: "I PARK U",
         href: "https://iparku.info/eng/",
         linkText: "www.iparku.info",
     },
     {
-        src: "/assets/img/about/client-logo/6.png",
+        src: "/assets/img/about/client-logo/svg/6.svg",
         title: "AFS",
         href: "https://afs.org/",
         linkText: "www.afs.org",

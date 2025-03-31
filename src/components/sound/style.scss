@@ -1,89 +1,61 @@
-// src\components\sound\style.scss
+@import "../../assets/sass/helper";
 
 .sound-control {
-    audio {
-        display: none;
-    }
+  audio {
+    display: none;
+  }
 
-    .sound-toggle-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
+  .sound-toggle-btn {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-        // &:focus {
-            // outline: 2px solid #fff; // Добавляем визуальную индикацию фокуса для доступности
-            // outline-offset: 2px;
-        // }
+    .toggle-text {
+      position: relative;
+      --animate-trans: translateY(5px) rotateX(75deg);
 
-        .equalizer-icon {
-            width: 30px;
-            height: 30px;
-            color: #fff;
+      .text-open, .text-close {
+        position: absolute;
+        top: 0;
+        left: 0;
 
-            .bar {
-                transform-origin: bottom;
-                transform: scaleY(0.9);
-                transition: transform 0.5s ease;
-            }
-
-            &.playing {
-                .bar {
-                    transform: scaleY(1);
-                }
-
-                .bar1 {
-                    animation: equalizer1 0.65s infinite alternate;
-                }
-                .bar2 {
-                    animation: equalizer2 0.65s infinite alternate;
-                    animation-delay: 0.1s;
-                }
-                .bar3 {
-                    animation: equalizer3 0.65s infinite alternate;
-                    animation-delay: 0.3s;
-                }
-                .bar4 {
-                    animation: equalizer4 0.65s infinite alternate;
-                    animation-delay: 0.2s;
-                }
-            }
+        .char {
+          opacity: 0;
+          visibility: hidden;
+          transform: var(--animate-trans);
         }
-    }
-}
+      }
 
-@keyframes equalizer1 {
-    0% {
-        transform: scaleY(0.5);
-    }
-    100% {
-        transform: scaleY(1);
-    }
-}
+      .text-open, .text-close, .text-menu {
+        overflow: hidden;
+        will-change: transform;
 
-@keyframes equalizer2 {
-    0% {
-        transform: scaleY(0.3);
+        .char {
+          will-change: transform;
+          transition-property: opacity, visibility, transform;
+          transition-duration: 0.5s;
+          transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+      }
     }
-    100% {
-        transform: scaleY(1);
-    }
-}
 
-@keyframes equalizer3 {
-    0% {
-        transform: scaleY(0.6);
-    }
-    100% {
-        transform: scaleY(1);
-    }
-}
+    &:hover {
+      .text-menu {
+        .char {
+          opacity: 0;
+          visibility: hidden;
+          transform: var(--animate-trans);
+        }
+      }
 
-@keyframes equalizer4 {
-    0% {
-        transform: scaleY(0.4);
+      &:not(.open) .text-open .char,
+      &.open .text-close .char {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+      }
     }
-    100% {
-        transform: scaleY(1);
-    }
+  }
 }

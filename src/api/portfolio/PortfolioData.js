@@ -20,7 +20,7 @@ const data = [
         title: "TOMOROW'S TECHNOLOGY - TODAY!",
         // slug: 'time-tag-watch',
         category: ['Brand'],
-        description: 'At DEXSA, we don’t just follow trends—we create them. Our team of elite engineers, visionary designers, and innovators crafts cutting-edge digital solutions that redefine industries. From next-gen web development to AI-driven automation, we bring tomorrow’s technologies to life today.',
+        description: 'At DEXSA, we don’t just follow the future — we engineer it. Our team of top-tier developers, visionary designers, and deep tech experts delivers breakthrough digital solutions that reshape industries. From next-gen web platforms to AI-powered automation, we transform ambitious ideas into working technology — today.',
         src: '/assets/img/project/bg_01-min.png',
         srcSlider: '/assets/img/project/bg_01-min.png',
         overlay: 2,
@@ -32,7 +32,7 @@ const data = [
         title: "Projects",
         slug: 'projects',
         category: ['Projects'],
-        description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
+        description: 'Innovation starts with bold visionaries. At DEXSA, we collaborate with pioneers — founders, engineers, creators — who shape the future through breakthrough technologies and meaningful impact. These are the projects that change the game.',
         src: '/assets/img/project/bg_02.png',
         srcSlider: '/assets/img/project/bg_02-min.png',
         // video: {
@@ -67,7 +67,7 @@ const data = [
         //     poster: '/assets/img/project/project4/1.jpg',
         //     loop: true
         // },
-        description: 'We are creating digital solutions of the future today. DEXSA is a team of engineers, designers and strategists who turn innovations into real products. We work at the intersection of technology and creativity, creating web applications, AI solutions and digital platforms that move the industry forward.',
+        description: 'We build the digital solutions of tomorrow — today. DEXSA is a team of engineers, designers, and strategists who turn breakthrough ideas into scalable products. At the intersection of tech and creativity, we deliver next-gen web apps, AI-powered platforms, and automation tools that move industries forward.',
         overlay: 2,
         buttonText: "Read More",
         component: (props) => <About {...props}/>
@@ -79,7 +79,7 @@ const data = [
         src: '/assets/img/contact/Contact.webp',
         srcSlider: '/assets/img/contact/Contact.webp',
         category: ['Contact'],
-        description: 'We are always happy to receive new projects and interesting ideas. Contact us to discuss how we can help you bring your ideas to life. We know how to make your project unique.',
+        description: 'We’re always open to bold concepts and visionary projects. Let’s talk about how we can bring your ideas to life — with precision, creativity, and the tech to scale. We know how to make your product stand out.',
         overlay: 2,
         buttonText: "Contact Us",
         // component: (props) => <WhatIfGold {...props}/>

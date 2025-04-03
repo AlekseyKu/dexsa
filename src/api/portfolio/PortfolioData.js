@@ -21,8 +21,8 @@ const data = [
         // slug: 'time-tag-watch',
         category: ['Brand'],
         description: 'At DEXSA, we don’t just follow the future — we engineer it. Our team of top-tier developers, visionary designers, and deep tech experts delivers breakthrough digital solutions that reshape industries. From next-gen web platforms to AI-powered automation, we transform ambitious ideas into working technology — today.',
-        src: '/assets/img/project/bg_01-min.png',
-        srcSlider: '/assets/img/project/bg_01-min.png',
+        src: '/assets/img/project/main_bg.webp',
+        srcSlider: '/assets/img/project/main_bg.webp',
         overlay: 2,
         buttonText: "Explore Project",
         // component: (props) => <TimeTagWatch {...props} />

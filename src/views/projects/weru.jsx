@@ -55,7 +55,7 @@ const Weru = ({data}) => {
                 // href="https://www.behance.net/gallery/57136617/Time-Tag_Watch?tracking_source=search%7Cwatch%20"
                 overlay={data.overlay}
             >
-                <strong className="color-heading text-uppercase">A new era of digital memoryY</strong> 
+                <strong className="color-heading text-uppercase">A new era of digital memory</strong> 
 
                 <div className="desc">
                     WERU is a groundbreaking platform that redefines how we preserve and honor memories in the digital age. 

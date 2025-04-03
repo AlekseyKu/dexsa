@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import TitleSection from "../../components/heading/TitleSection";
+import "./TechStackSection.scss"
 
 const techStack = [
   {
@@ -79,8 +80,8 @@ const TechStackSection = () => {
               <button
                 key={index}
                 onClick={() => handleClick(index)}
-                className={`btn text-start fw-semibold mb-1 px-4 py-3 ${
-                  activeIndex === index ? "btn-danger text-white" : "btn-dark text-light"
+                className={`btnTech text-start fw-semibold mb-1 px-4 py-3 ${
+                  activeIndex === index
                 }`}
               >
                 {stack.category}

@@ -1,0 +1,21 @@
+
+// #C44E35 !important;
+// #000322 !important;
+  
+.btnTech {
+  
+    &:hover {
+      background: transparent !important;
+      color: #fff !important;
+      border-color: #000322 !important;
+  
+    }
+  
+    &.active {
+      background: transparent !important;
+      color: #fff !important;
+      border-color: #2ecc71 !important;
+  
+    }
+  }
+  

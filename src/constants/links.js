@@ -1,0 +1,1 @@
+export const PITCH_DECK_LINK = "https://www.canva.com/design/DAGiGAcvKgI/1GD9YwWaRuAUTiBr_WHZ_A/edit?utm_content=DAGiGAcvKgI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton";

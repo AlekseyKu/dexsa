@@ -7,7 +7,7 @@ import gsap from 'gsap';
 
 // Importing the CSS
 import 'swiper/css';
-import './style.scss'
+import './style.scss';
 
 // Component
 import {Swiper, SwiperSlide} from 'swiper/react';

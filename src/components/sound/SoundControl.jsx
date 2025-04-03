@@ -85,8 +85,8 @@ const SoundControl = () => {
         onKeyDown={handleKeyDown}
         role="button"
         tabIndex={0}
-        title={isMuted}
-        aria-label={isMuted}
+        title={isMuted ? "Включить звук" : "Выключить звук"}
+        aria-label={isMuted ? "Включить звук" : "Выключить звук"}
       >
         <div className="toggle-text">
           <div className="text-open">{wrapText('Play')}</div>

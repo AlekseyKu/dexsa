@@ -12,12 +12,12 @@ import './style.scss';
 // const Scrollbar = React.lazy(() => import("smooth-scrollbar"));
 
 const MainDemo = React.lazy(() => import("../views/home/MainDemo"));
-const Demo2 = React.lazy(() => import("../views/home/Demo2"));
-const Demo3 = React.lazy(() => import("../views/home/Demo3"));
+// const Demo2 = React.lazy(() => import("../views/home/Demo2"));
+// const Demo3 = React.lazy(() => import("../views/home/Demo3"));
 
-const SliderOne = React.lazy(() => import("../views/slider/SliderOne"));
-const SliderTow = React.lazy(() => import("../views/slider/SliderTow"));
-const SliderThree = React.lazy(() => import("../views/slider/SliderThree"));
+// const SliderOne = React.lazy(() => import("../views/slider/SliderOne"));
+// const SliderTow = React.lazy(() => import("../views/slider/SliderTow"));
+// const SliderThree = React.lazy(() => import("../views/slider/SliderThree"));
 
 // const Work = React.lazy(() => import("../views/Work"));
 // const WorkTow = React.lazy(() => import("../views/WorkTow"));
@@ -25,7 +25,7 @@ const SliderThree = React.lazy(() => import("../views/slider/SliderThree"));
 
 const About = React.lazy(() => import("../views/About"));
 const Contact = React.lazy(() => import("../views/Contact"));
-const BlogDetails = React.lazy(() => import("../views/blog/BlogDetails"));
+// const BlogDetails = React.lazy(() => import("../views/blog/BlogDetails"));
 
 const Ipu = React.lazy(() => import("../views/projects/ipu"));
 const Weru = React.lazy(() => import("../views/projects/weru"));
@@ -37,8 +37,8 @@ const BizProcessAutomation = React.lazy(() => import("../views/projects/bizProce
 const BizWebDevelopment= React.lazy(() => import("../views/projects/bizWebDevelopment"))
 const BizTechSupport= React.lazy(() => import("../views/projects/bizTechSupport"))
 
-const BizForInvestors= React.lazy(() => import("../views/projects/bizForInvestors"))
-const BizFor= React.lazy(() => import("../views/projects/bizFor"))
+// const BizForInvestors= React.lazy(() => import("../views/projects/bizForInvestors"))
+// const BizFor= React.lazy(() => import("../views/projects/bizFor"))
 
 
 
@@ -63,7 +63,7 @@ const Router = () => {
     const bizProcessAutomationData = getProjectsBySlug('process-automation');
     const bizWebDevelopmentData = getProjectsBySlug('web-development');
     const bizTechSupportData = getProjectsBySlug('it-support');
-    const bizForInvestorsData = getProjectsBySlug('for-investors');
+    // const bizForInvestorsData = getProjectsBySlug('for-investors');
 
 
 
@@ -76,12 +76,12 @@ const Router = () => {
                 <Routes location={location}>
 
                     <Route path="/" element={<MainDemo/>}/>
-                    <Route path="/demo-2" element={<Demo2/>}/>
+                    {/* <Route path="/demo-2" element={<Demo2/>}/>
                     <Route path="/demo-3" element={<Demo3/>}/>
 
                     <Route path="/slider" element={<SliderOne/>}/>
                     <Route path="/slider-2" element={<SliderTow/>}/>
-                    <Route path="/slider-3" element={<SliderThree/>}/>
+                    <Route path="/slider-3" element={<SliderThree/>}/> */}
 
                     {/* <Route exact path="/portfolio" element={<Work/>}/> */}
                     {/* <Route exact path="/portfolio-2" element={<WorkTow/>}/> */}
@@ -89,7 +89,7 @@ const Router = () => {
 
                     <Route exact path="/about" element={<About/>}/>
                     <Route exact path="/contact" element={<Contact/>}/>
-                    <Route exact path="/blog-details" element={<BlogDetails/>}/>
+                    {/* <Route exact path="/blog-details" element={<BlogDetails/>}/> */}
 
                     <Route exact path="/projects" element={<Projects/>}/>
                     <Route exact path="/projects/:slug" element={<ProjectDetails/>}/>
@@ -101,8 +101,8 @@ const Router = () => {
                     <Route exact path="/projects/web-development" element={<BizWebDevelopment data={bizWebDevelopmentData}/>}/>
                     <Route exact path="/projects/it-support" element={<BizTechSupport data={bizTechSupportData}/>}/>
 
-                    <Route exact path="/projects/for-investors" element={<BizForInvestors data={bizForInvestorsData}/>}/>
-                    <Route exact path="/projects/for" element={<BizFor/>}/>
+                    {/* <Route exact path="/projects/for-investors" element={<BizForInvestors data={bizForInvestorsData}/>}/> */}
+                    {/* <Route exact path="/projects/for" element={<BizFor/>}/> */}
 
 
 

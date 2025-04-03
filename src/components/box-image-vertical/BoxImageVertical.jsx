@@ -1,3 +1,4 @@
+// src\components\box-image-vertical\BoxImageVertical.jsx
 import React from 'react'
 import './style.scss'
 

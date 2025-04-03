@@ -1,9 +1,8 @@
+// src/components/box-image-vertical/style.scss
 @import "../../assets/sass/helper";
-
 
 .box-gallery-vertical {
   position: relative;
-
 
   .mask-bg {
     @include media_991(min) {
@@ -19,41 +18,113 @@
     }
   }
 
-
-  .inner-img {
-    width: 100%;
-    height: 100%;
-
-
-    @include media_991(min) {
-      min-height: 80vh;
-      padding-right: 50px;
-      .dsn-parallax-img {
-        position: absolute;
-        width: 100%;
-      }
-    }
-
-  }
-
   @include media_991(min) {
-    .item-box, .item-box .box-text {
-      padding-top: $margin-padding;
-      padding-bottom: $margin-padding;
+    .item-box {
+      display: flex;
+      align-items: stretch;
+      height: 80vh; // Фиксированная высота блока
     }
-    .box-text {
+
+    .item-box .box-text {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      padding-left: 50px;
+      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding-left: 50px;
+    }
+
+    .inner-img {
+      width: 100%;
       height: 100%;
+      padding-right: 50px;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      width: 100%;
+      height: 100%;
+      padding: 20px; // Отступы 20px со всех сторон
+      box-sizing: border-box; // Учитываем padding в размерах
+      // opacity: 0; // Начальная непрозрачность для эффекта
+      // transition: opacity 1s ease; // Плавный переход для opacity
+    }
+
+    // .swiper-slide-active {
+    //   opacity: 1; // Активный слайд полностью видим
+    // }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; // Изображение полностью помещается, сохраняя пропорции
+      object-position: center; // Центрируем изображение
     }
   }
 
-  @include media_991(){
-    .box-text{
+  @include media_991() {
+    .item-box {
+      height: auto;
+    }
+
+    .inner-img {
+      width: 100%;
+      height: 50vh;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      width: 100%;
+      height: 100%;
+      padding: 20px; // Отступы 20px на мобильных
+      box-sizing: border-box;
+      
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .box-text {
       margin-top: 30px;
     }
   }
 
+  // Стили для пагинации Swiper
+  .swiper-pagination {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+  }
+
+  .swiper-pagination-bullet {
+    background: white;
+    opacity: 0.5;
+    width: 10px;
+    height: 10px;
+    // margin: 0 5px;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: white;
+  }
+
+  // Стили для навигации Swiper
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: white;
+  }
 }

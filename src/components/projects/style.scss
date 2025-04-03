@@ -2,8 +2,8 @@
 
 
 @include media_768(min){
-  .dsn-portfolio.port-classic .portfolio-item:nth-of-type(2){
-    margin-top: calc(var(--dsn-row-item , 0px) + 80px);
+  .dsn-portfolio.port-classic .portfolio-item{
+    margin-top: calc(var(--dsn-row-item , 0px) + 20px);
   }
 }
 
@@ -11,16 +11,22 @@
 .portfolio-item {
   position: relative;
   overflow: hidden;
+  height: 40vh;
 
 
   .inner-img {
-    height: 70vh;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    // object-fit: cover;
+    // object-position: top;
+    // aspect-ratio: 4 / 3;
   }
 
-  .port-classic & .inner-img {
+  // .port-classic & .inner-img {
     // height: 80vh;
-    height: 40vh;
-  }
+    // height: 40vh;
+  // }
 
 
   .item-border {

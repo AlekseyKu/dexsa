@@ -27,9 +27,9 @@ const menuContent = [
                     {name: "Technical Support", to: '/projects/it-support'},
                 ]
             },
-            {
-                name: "For Investors", to: '/projects/for-investors',
-            },
+            // {
+            //     name: "For Investors", to: '/projects/for-investors',
+            // },
         ]
     },
     // {

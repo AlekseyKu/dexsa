@@ -26,6 +26,7 @@ function FilterPortfolio({className, categories, actionFilter}) {
                     <button type="button" className={getActive(0)} onClick={e => handleButton(e, -1, "")}>
                         All
                     </button>
+
                     {
                         categories && categories.map((cat, i) =>
                             <button

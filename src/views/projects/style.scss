@@ -4,6 +4,20 @@
 // }
 
 .desc {
-    max-width: 40%;
     margin-top: 20px;
+    @media (min-width: 991px) {
+        max-width: 40%;
+    }
+}
+
+// .color-heading {
+//     @media (min-width: 991px) {
+//         padding-bottom: 20px;
+//     }
+// }
+
+.cover-bg-img {
+    @media (max-width: 991px) {
+        opacity: 0.5 !important;
+    }
 }

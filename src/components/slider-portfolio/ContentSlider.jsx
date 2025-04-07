@@ -6,6 +6,9 @@ import {getPortfolioLink} from "../../api/portfolio/PortfolioData";
 import ButtonDefault from "../button/button-default/ButtonDefault";
 import {faAngleRight} from "@fortawesome/free-solid-svg-icons";
 
+const vh = window.innerHeight / 100;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 function ContentSlider({data , activeClass} , ref) {
 
     return (

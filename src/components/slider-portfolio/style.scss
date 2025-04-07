@@ -3,7 +3,9 @@
 
 @include media_991() {
   body {
-    overflow-y: hidden; // Запрещаем прокрутку всей страницы
+    overflow-y: hidden;
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
   }
 }
 

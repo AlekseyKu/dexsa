@@ -17,7 +17,7 @@ import dsnSplitting from "../../hooks/Spltting";
 import NavSlider from "./NavSlider";
 import ContentSlider from "./ContentSlider";
 import ControlNav from "./ControlNav";
-import SocialMediaSlider from "../social-media/SocialMediaSlider";
+// import SocialMediaSlider from "../social-media/SocialMediaSlider";
 import {dsnCN} from "../../hooks/helper";
 
 
@@ -218,7 +218,7 @@ function SliderPortfolio({className, typeBg, parallax, tag: Tag = 'div'}: Slider
                        onSwiper={setNavSwiper}
                        controller={{control: bgSwiper}}
             />
-            <SocialMediaSlider/>
+            {/* <SocialMediaSlider/> */}
         </Tag>
 
     );

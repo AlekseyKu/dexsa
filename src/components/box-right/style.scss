@@ -53,4 +53,9 @@
 
 .highlight {
   color: $assistant-color;
+  @media (max-width: 991px) {
+    -webkit-text-stroke: 1px #FFFFFF;
+  text-stroke: 1px #FFFFFF;
+  } 
 }
+

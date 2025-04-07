@@ -3,8 +3,6 @@
 .footer {
   position: relative;
 
-
-
   .dsn-col-footer {
     .footer-title {
       position: relative;
@@ -23,6 +21,10 @@
         width: 15px;
         height: 2px;
         background-color: $heading-color;
+
+        @include media_991() {
+          left: 47%;
+        }
       }
     }
 
@@ -52,6 +54,17 @@
       span {
         margin-right: 5px;
         margin-left: 5px;
+      }
+    }
+
+
+    @include media_991() {
+      text-align: center !important;
+    }
+    
+    .animated-logo {
+      @include media_991() {
+        margin: 0 !important;
       }
     }
 

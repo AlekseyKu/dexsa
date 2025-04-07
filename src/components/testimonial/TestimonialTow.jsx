@@ -34,7 +34,7 @@ const TestimonialDetails = [
     },
     {
         authorName: "Dmitry Sarbaev",
-        label: "In-Credible Printing Technologies | CEO",
+        label: "In-Credible Technologies | CEO",
         description: `DEXSA took on challenges that others wouldn’t. From infrastructure to custom tools, they executed with accuracy and deep expertise. These are not just developers — they are long-term tech partners.`,
         avatar: "/assets/img/avatar/DS.jfif",
     },

@@ -5,13 +5,17 @@ import AnimatedLogo from "../animated-logo/AnimatedLogo";
 
 const MainBrand = styled.div`
     .animated-logo {
-        width: ${props => props.width};
-        height: ${props => props.height};
-        line-height: ${props => props.height}; // Для выравнивания по высоте
+        width: 100%;
+        height: auto;
+        line-height: normal; // Для выравнивания по высоте
         display: inline-flex;
         align-items: center;
     }
 `;
+
+// width: ${props => props.width};
+// height: ${props => props.height};
+// line-height: ${props => props.height}; // Для выравнивания по высоте
 
 const Brand = ({ width, height, alt }) => {
     return (
@@ -21,7 +25,7 @@ const Brand = ({ width, height, alt }) => {
     );
 };
 
-MainBrand.defaultProps = { width: '80px', height: 'auto' };
+MainBrand.defaultProps = { width: '100%', height: 'auto' };
 Brand.defaultProps = { alt: "DEXSA" };
 
 export default React.memo(Brand);

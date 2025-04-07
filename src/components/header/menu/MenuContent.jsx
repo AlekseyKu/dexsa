@@ -14,14 +14,14 @@ function MenuContent({className}) {
                 <div className="nav-content">
                     <h5 className="sm-title-block mb-10">Company</h5>
                     <p>
-                        US Delewer State <br/> Address, SK1 66LM
+                        DexStudioApp Inc <br /> US Delewer State <br/> 8 The Green, Dover, DE 19901
                     </p>
 
                 </div>
                 <div className="nav-content mt-30">
                     <h5 className="sm-title-block mb-10">Development Studio</h5>
                     <p>
-                        Vietnam, Danang City <br/> Address, SK1 66LM
+                        Vietnam, Danang City <br/> 368/28 Ngũ Hành Sơn
                     </p>
 
                 </div>

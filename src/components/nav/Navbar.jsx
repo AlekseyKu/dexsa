@@ -87,11 +87,12 @@ const Navbar = ({children, textOpen, textMenu, textClose, hamburger}) => {
 
     return (
         <header className={dsnCN('site-header container-fluid', typeNave)} ref={nav}>
-            {children}
-            <div className="nav-controls">
-                <SoundControl />
-                {typeNave && (
-                    <Toggle
+            <div className="header-content">
+                {children} {/* Логотип (Brand) */}
+                <div className="nav-controls">
+                    <SoundControl />
+                    {typeNave && (
+                        <Toggle
                         textOpen={textOpen}
                         textMenu={textMenu}
                         textClose={textClose}
@@ -99,12 +100,12 @@ const Navbar = ({children, textOpen, textMenu, textClose, hamburger}) => {
                         reserved={reserved}
                         setReserved={setReserved}
                         removeOpenMenu={removeOpenMenu}
-                    />
-                )}
+                        />
+                    )}
+                </div>
             </div>
             <div className="bg background-section"/>
             <div className="bg background-main" onTransitionEnd={TransEnd}/>
-
         </header>
     );
 };

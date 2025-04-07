@@ -3,16 +3,18 @@
 .animated-logo {
     display: flex;
     align-items: center;
-    font-family: 'Montserrat', sans-serif; // Замени на шрифт, который используется в твоём проекте
-    font-size: 3rem; // Размер логотипа (можно настроить)
-    color: #fff; // Цвет текста (соответствует тёмной теме твоего сайта)
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1.5rem + 2vw);
+    color: #fff;
     user-select: none; // Отключаем выделение текста
-    margin-left: 20px;
+    // margin-left: 5px;
+    max-width: 100%;
 
     .bracket {
         font-weight: 500;
-        font-size: 3.5rem; // Скобки чуть больше текста
-        margin-bottom: 10px;
+        font-size: calc(1.5rem + 2.5vw); // Скобки чуть больше текста
+        // margin-bottom: 10px;
+        // margin-bottom: 0.5rem;
     }
 
     .logo-text {
@@ -31,5 +33,25 @@
 
     .v-dark & {
         color: #fff;
+    }
+
+    // Ограничиваем максимальный размер шрифта на больших экранах
+    @media (min-width: 1200px) {
+        font-size: 3rem; // Максимальный размер шрифта
+        margin-left: 5px;
+        .bracket {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    // Уменьшаем размер шрифта на очень маленьких экранах
+    @media (max-width: 576px) {
+        font-size: calc(1.5rem + 1.5vw); // Меньший базовый размер для маленьких экранов
+        margin-left: 20px;
+        .bracket {
+            font-size: calc(1.5rem + 2vw);
+            margin-bottom: 0.2rem;
+        }
     }
 }

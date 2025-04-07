@@ -11,14 +11,18 @@
   transition-property: background-color, padding-top, padding-bottom, transform;
   transition-duration: 0.5s;
 
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
 
+  // Базовые стили для .main-logo (будут переопределены в медиазапросах)
   .main-logo {
     position: relative;
     z-index: 1;
+    text-align: center;
   }
 
   .nav-controls {
@@ -46,17 +50,26 @@
     margin-bottom: 0;
     flex-wrap: wrap;
 
-
     ul {
       position: absolute;
-
     }
-
-
   }
 
-
+  // Десктопная версия (ширина ≥ 991px)
   @include media_991(min) {
+    .main-logo {
+      flex: 0 0 20%; // Логотип занимает 20% ширины в десктопной версии
+      max-width: 20%;
+      padding-left: 20px;
+      text-align: left;
+    }
+
+    .nav-controls {
+      flex: 0 0 auto; // В десктопе nav-controls занимает столько, сколько нужно
+      max-width: none;
+      justify-content: flex-end;
+    }
+
     &:not(.dsn-hamburger) {
       @import "menu/classic";
 
@@ -66,15 +79,40 @@
     }
   }
 
+  // Мобильная версия (ширина < 991px)
+  @include media_991 {
+    .main-logo {
+      flex: 0 0 50%; // Логотип занимает 50% ширины в мобильной версии
+      max-width: 50%;
+      text-align: left; // Выравнивание текста логотипа слева
+    }
 
+    .nav-controls {
+      flex: 0 0 50%; // Занимает ровно 50% ширины
+      max-width: 50%;
+      display: flex;
+      justify-content: flex-end; // Прижимаем кнопки к правому краю
+      align-items: center;
+      gap: 10px; // Отступ между кнопками
+    }
+  }
+
+  // Стили для dsn-hamburger (применяются только к меню, но не к ширине логотипа)
   &.dsn-hamburger {
     @import "menu/hamburger";
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
   }
 
-  &.nav-bg{
-      background-color: $bg-color;
+  &.nav-bg {
+    background-color: $bg-color;
   }
-  &.hide-nav:not(.dsn-open){
+
+  &.hide-nav:not(.dsn-open) {
     transform: translateY(-100%);
   }
 }

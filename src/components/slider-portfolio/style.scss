@@ -176,7 +176,7 @@
     }
     @include media_575() {
       right: 30px;
-      bottom: 15px;
+      bottom: 45px;
     }
 
     svg {
@@ -236,12 +236,12 @@
     }
     
     .slide-content {
-      // position: absolute;
-      height: 60vh;
-      position: fixed;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      margin-right: 20px;
+      // height: 50vh;
+      // position: fixed;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-between;
     }
   }
   // .sound-toggle-btn {

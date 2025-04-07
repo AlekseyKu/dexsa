@@ -1,6 +1,12 @@
 // src\components\slider-portfolio\style.scss
 @import "../../assets/sass/helper";
 
+@include media_991() {
+  body {
+    overflow-y: hidden; // Запрещаем прокрутку всей страницы
+  }
+}
+
 .root-slider {
   position: relative;
   height: 100vh;
@@ -39,6 +45,13 @@
    */
   .hero-content {
     pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
     @include media_768(min) {
       padding-left: 12.5vw;
     }
@@ -222,18 +235,21 @@
   }
 
   @include media_991() {
-    height: 100vh; // Убедимся, что высота равна 100vh в мобильной версии
+    height: calc(100vh - env(safe-area-inset-bottom));
     overflow-y: hidden; // Отключаем прокрутку
 
     .bg-image,
     .bg-image > .swiper {
-      height: 100%; // Убедимся, что контейнер слайдера занимает всю высоту
+      height: 100%;
+      overflow: hidden;
     }
 
     .hero-content {
       // Убедимся, что содержимое не выходит за пределы
       max-height: 100%;
       overflow: hidden;
+      padding-top: 80px;
+      padding-bottom: calc(80px + env(safe-area-inset-bottom));
     }
     
     .slide-content {
@@ -243,6 +259,10 @@
       // display: flex;
       // flex-direction: column;
       // justify-content: space-between;
+    }
+    .control-nav {
+      bottom: calc(10vh + env(safe-area-inset-bottom));
+      right: 30px;
     }
   }
   // .sound-toggle-btn {

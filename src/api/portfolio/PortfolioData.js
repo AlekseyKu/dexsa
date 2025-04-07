@@ -29,7 +29,7 @@ const data = [
     },
     {
         id: 2,
-        title: "Projects",
+        title: "Our offers",
         slug: 'projects',
         category: ['Projects'],
         description: 'Innovation starts with bold visionaries. At DEXSA, we collaborate with pioneers — founders, engineers, creators — who shape the future through breakthrough technologies and meaningful impact. These are the projects that change the game.',

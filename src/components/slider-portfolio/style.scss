@@ -5,6 +5,11 @@
   position: relative;
   height: 100vh;
   overflow-y: hidden;
+  margin-bottom: 0;
+
+  // @include media_768() {
+  //   padding-bottom: 100px;
+  // }
 
   &, .bg-image, .bg-image > .swiper {
     height: 100vh;
@@ -39,6 +44,9 @@
     @include media_768() {
       padding: 0 var(--bs-gutter-x);
     }
+    .title-heading {
+      font-size: 2rem;
+    }
 
     .dsn-description {
       max-width: 470px;
@@ -49,6 +57,11 @@
 
     .slide-content {
       position: absolute;
+      // height: 60vh;
+      // position: fixed;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-between;
 
 
       .post-info, .dsn-description, .btn-default, .title-heading:not(.chars) {
@@ -218,8 +231,17 @@
 
     .hero-content {
       // Убедимся, что содержимое не выходит за пределы
-      max-height: 90%;
+      max-height: 100%;
       overflow: hidden;
+    }
+    
+    .slide-content {
+      // position: absolute;
+      height: 60vh;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
   // .sound-toggle-btn {

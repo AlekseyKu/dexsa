@@ -17,10 +17,10 @@ import ButtonProject from "../../components/button/button-project/ButtonProject"
 import ButtonDefault from "../../components/button/button-default/ButtonDefault";
 // import BoxImageVertical from "../../components/box-image-vertical/BoxImageVertical";
 import BoxSliderVertical from "../../components/box-image-vertical/BoxSliderVertical";
-import ParallaxImage from "../../components/parallax-image/ParallaxImage";
-import ButtonPopup from "../../components/button/button-popup/ButtonPopup";
-import MoveBox from "../../components/move-box/MoveBox";
-import FJustifiedGallery from "../../components/justified-gallery/FJustifiedGallery";
+// import ParallaxImage from "../../components/parallax-image/ParallaxImage";
+// import ButtonPopup from "../../components/button/button-popup/ButtonPopup";
+// import MoveBox from "../../components/move-box/MoveBox";
+// import FJustifiedGallery from "../../components/justified-gallery/FJustifiedGallery";
 // import NextProject from "../../components/next/NextProject";
 import NextPage from '../../components/next/NextPage';
 import Footer from '../../components/footer/Footer';
@@ -156,16 +156,16 @@ const Ipu = ({data}) => {
             {/* End Box Info With Slider */}
 
             {/* Start Box Info Center Content */}
-            <div className="p-relative section-margin v-dark-head text-center">
+            {/* <div className="p-relative section-margin v-dark-head text-center">
                 <ParallaxImage src="/assets/img/project/project1/7.jpg" overlay={4}/>
                 <Container className="v-middle z-index-1">
                     <ButtonPopup href="http://media.w3.org/2010/05/sintel/trailer.mp4"/>
                 </Container>
-            </div>
+            </div> */}
             {/* End Box Info Center Content */}
 
             {/* Start Box Info Move Content */}
-            <div className="p-relative section-margin">
+            {/* <div className="p-relative section-margin">
                 <ParallaxImage src="/assets/img/project/project1/13.jpg" overlay={4}/>
                 <MoveBox>
                     <h3> Take a seat at a table on <br/> the ground floor </h3>
@@ -175,10 +175,10 @@ const Ipu = ({data}) => {
                         Spain...
                     </p>
                 </MoveBox>
-            </div>
+            </div> */}
             {/* End Box Info Move Content */}
 
-            <FJustifiedGallery
+            {/* <FJustifiedGallery
                 images={[
                     {src: "/assets/img/project/project1/6.jpg", caption: "TIME TAG WATCH"},
                     {src: "/assets/img/project/project1/8.jpg", caption: "TIME TAG WATCH"},
@@ -188,7 +188,7 @@ const Ipu = ({data}) => {
                     {src: "/assets/img/project/project1/12.jpg", caption: "TIME TAG WATCH"},
                 ]}
                 className="section-margin"
-            />
+            /> */}
 
             {/* <NextProject heroContent={nextData} overlay={nextData.overlay}/> */}
             <NextPage className="section-margin" text="Next Project" to="/projects/weru">

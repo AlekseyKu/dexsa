@@ -3,9 +3,12 @@
 
 .root-slider {
   position: relative;
+  height: 100vh;
+  overflow-y: hidden;
 
   &, .bg-image, .bg-image > .swiper {
     height: 100vh;
+    overflow: hidden;
   }
 
 
@@ -160,6 +163,7 @@
     }
     @include media_575() {
       right: 30px;
+      bottom: 15px;
     }
 
     svg {
@@ -201,37 +205,50 @@
     @include media_768 {
       display: none;
     }
-
-
   }
 
-  .sound-toggle-btn {
-    position: fixed; /* Фиксируем кнопку в правом верхнем углу */
-    top: 100px;
-    // right: 60px; /* Учитываем отступ для кнопки меню */
-    left: 60px;
-    z-index: 1000;
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color: #fff;
-    font-size: 18px;
-    transition: all 0.3s ease;
+  @include media_991() {
+    height: 100vh; // Убедимся, что высота равна 100vh в мобильной версии
+    overflow-y: hidden; // Отключаем прокрутку
 
-    &:hover {
-      background: rgba(255, 255, 255, 0.1);
-      border-color: rgba(255, 255, 255, 0.5);
+    .bg-image,
+    .bg-image > .swiper {
+      height: 100%; // Убедимся, что контейнер слайдера занимает всю высоту
+    }
+
+    .hero-content {
+      // Убедимся, что содержимое не выходит за пределы
+      max-height: 100%;
+      overflow: hidden;
     }
   }
+  // .sound-toggle-btn {
+  //   position: fixed; /* Фиксируем кнопку в правом верхнем углу */
+  //   top: 100px;
+  //   // right: 60px; /* Учитываем отступ для кнопки меню */
+  //   left: 60px;
+  //   z-index: 1000;
+  //   background: transparent;
+  //   border: 1px solid rgba(255, 255, 255, 0.3);
+  //   border-radius: 50%;
+  //   width: 40px;
+  //   height: 40px;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   cursor: pointer;
+  //   color: #fff;
+  //   font-size: 18px;
+  //   transition: all 0.3s ease;
 
-  audio {
-    display: none;
-  }
+  //   &:hover {
+  //     background: rgba(255, 255, 255, 0.1);
+  //     border-color: rgba(255, 255, 255, 0.5);
+  //   }
+  // }
+
+  // audio {
+  //   display: none;
+  // }
 }
 

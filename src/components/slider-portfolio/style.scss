@@ -29,6 +29,7 @@
 
       .swiper, .dsn-swiper-parallax-transform {
         height: calc(100% - 20%);
+        margin-bottom: 100px;
       }
     }
   }
@@ -176,7 +177,7 @@
     }
     @include media_575() {
       right: 30px;
-      bottom: 45px;
+      bottom: 15vh;
     }
 
     svg {

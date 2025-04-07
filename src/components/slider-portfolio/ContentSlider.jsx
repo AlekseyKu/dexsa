@@ -8,8 +8,6 @@ import {faAngleRight} from "@fortawesome/free-solid-svg-icons";
 
 function ContentSlider({data , activeClass} , ref) {
 
-
-
     return (
         <div className="dsn-slider-content hero-content">
             {data.map((item, key) =>

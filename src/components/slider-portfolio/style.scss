@@ -15,9 +15,9 @@
   overflow-y: hidden;
   margin-bottom: 0;
 
-  // @include media_768() {
-  //   padding-bottom: 100px;
-  // }
+  @include media_991() {
+    touch-action: pan-x;
+  }
 
   &, .bg-image, .bg-image > .swiper {
     height: 100vh;

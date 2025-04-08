@@ -125,8 +125,13 @@
       }
 
       &.dsn-active {
-        .post-info, .dsn-description, .btn-default, .title-heading {
-          pointer-events: all;
+        .post-info,
+        .dsn-description,
+        .title-heading {
+          pointer-events: none; // Отключаем взаимодействие с текстом
+        }
+        .btn-default {
+          pointer-events: auto; // Разрешаем взаимодействие с кнопкой
         }
       }
     }

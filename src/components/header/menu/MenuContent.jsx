@@ -1,6 +1,8 @@
 import React from 'react';
 import {dsnCN} from "../../../hooks/helper";
 
+import './style.scss';
+
 function MenuContent({className}) {
     const socialData = [
         {link: "https://www.facebook.com/profile.php?id=61572373418340", name: "Facebook."},
@@ -51,7 +53,7 @@ function MenuContent({className}) {
                 </div>
             </div>
 
-            <div className="footer-text mt-30 text-left">
+            <div className="footer-text mt-30">
                 <p>DEXSA 2025 © All Rights Reserved</p>
             </div>
 

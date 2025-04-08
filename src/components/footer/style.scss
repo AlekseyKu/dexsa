@@ -101,6 +101,10 @@
         margin-left: 5px;
         color: #a56433;
       }
+
+      @include media_991() {
+        align-items: center !important;
+      }
     }
   }
 }

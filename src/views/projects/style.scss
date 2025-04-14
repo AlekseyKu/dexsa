@@ -23,10 +23,14 @@
 }
 
 .icon {
-    @media (max-width: 991px) {
-        height: 150px;
-        width: auto;
+    img {
+        @media (max-width: 991px) {
+            object-fit: contain;
+            height: 150px !important;
+            width: 150px !important;
+        }
     }
+    
 }
 
 .hero-img {

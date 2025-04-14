@@ -10,7 +10,7 @@ function ContentFooter({className, ...restProps}) {
             </p>
             <p className="mt-2">
                 {/* <strong>INS</strong> <span>:</span>  */}
-                <a href="https://www.instagram.com/direct/t/17848593090256113" target="_blank" rel="noreferrer">DEXSA Direct</a>
+                <a href="https://www.instagram.com/dexstudioapp" target="_blank" rel="noreferrer">DEXSA Instagram</a>
             </p>
             <p className="mt-2">
                 {/* <strong>EMA</strong> <span>:</span>  */}

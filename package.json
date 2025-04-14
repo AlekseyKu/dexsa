@@ -1,6 +1,6 @@
 {
   "name": "dexsa",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "homepage": "https://dexsa.site",
   "private": true,
   "dependencies": {

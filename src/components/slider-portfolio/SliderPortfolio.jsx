@@ -17,7 +17,7 @@ import dsnSplitting from "../../hooks/Spltting";
 import NavSlider from "./NavSlider";
 import ContentSlider from "./ContentSlider";
 import ControlNav from "./ControlNav";
-// import SocialMediaSlider from "../social-media/SocialMediaSlider";
+import SocialMediaSlider from "../social-media/SocialMediaSlider";
 import {dsnCN} from "../../hooks/helper";
 
 
@@ -39,6 +39,22 @@ function SliderPortfolio({className, typeBg, parallax, tag: Tag = 'div'}: Slider
         bg = useRef();
 
     let tl = gsap.timeline();
+
+    // Отслеживаем изменение ширины экрана
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 991); // Состояние для мобильной версии
+
+    useEffect(() => {
+        const handleResize = () => {
+        setIsMobile(window.innerWidth < 991);
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize(); // Вызываем сразу, чтобы установить начальное значение
+
+        return () => {
+        window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     // Добавляем обработчик события колесика мыши с задержкой после скролла
     useEffect(() => {
@@ -219,6 +235,8 @@ function SliderPortfolio({className, typeBg, parallax, tag: Tag = 'div'}: Slider
                        controller={{control: bgSwiper}}
             />
             {/* <SocialMediaSlider/> */}
+            {/* Условно рендерим SocialMediaSlider только в десктопной версии */}
+            {!isMobile && <SocialMediaSlider />}
         </Tag>
 
     );

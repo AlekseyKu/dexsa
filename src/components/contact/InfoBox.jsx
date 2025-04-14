@@ -29,7 +29,7 @@ function InfoBox({className}) {
                 </li>
                 <li>
                     <span className="mr-10">Instgram</span>
-                    <a href="https://www.instagram.com/direct/t/17848593090256113" target="_blank" rel="noreferrer">DEXSA Direct</a>
+                    <a href="https://www.instagram.com/dexstudioapp" target="_blank" rel="noreferrer">DEXSA Instagram</a>
                 </li>
                 <li>
                     <span className="mr-10">Email</span>

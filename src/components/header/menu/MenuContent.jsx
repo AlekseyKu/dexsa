@@ -11,7 +11,7 @@ function MenuContent({className}) {
         // {link: "#0", name: "Twitter."}
     ];
     return (
-        <div className={dsnCN('container-content  d-flex flex-column justify-content-center', className)}>
+        <div className={dsnCN('container-content d-flex flex-column justify-content-center', className)}>
             <div className="nav__info">
                 <div className="nav-content">
                     <h5 className="sm-title-block mb-10">Company</h5>
@@ -53,7 +53,7 @@ function MenuContent({className}) {
                 </div>
             </div>
 
-            <div className="footer-text mt-30">
+            <div className="footer-text mt-30 pb-30">
                 <p>DEXSA 2025 © All Rights Reserved</p>
             </div>
 

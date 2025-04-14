@@ -6,7 +6,7 @@ import HeaderDefault from "../../components/header/HeaderDefault";
 import DsnGrid from "../../components/DsnGrid";
 // import ParallaxImage from "../../components/parallax-image/ParallaxImage";
 // import ButtonPopup from "../../components/button/button-popup/ButtonPopup";
-import CommentForm from "../../components/blog/FormProcessAutomation";
+import CommentForm from "../../components/blog/bizContactForm";
 import NextPage from "../../components/next/NextPage";
 import Footer from "../../components/footer/Footer";
 import TitleSection from "../../components/heading/TitleSection";
@@ -29,7 +29,7 @@ function BlogDetails({ props }) {
                 heroContent={heroContent}
                 parallax={{ yPercent: 30 }}
                 overlay={4}
-                height="80vh"
+                height="40vh"
             />
 
             <Container className="single-post post-content mb-section">

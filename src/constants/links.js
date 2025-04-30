@@ -1,1 +1,1 @@
-export const PITCH_DECK_LINK = "https://www.canva.com/design/DAGiGAcvKgI/1GD9YwWaRuAUTiBr_WHZ_A/edit?utm_content=DAGiGAcvKgI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton";
+export const PITCH_DECK_LINK = "https://www.canva.com/design/DAGiGAcvKgI/JcAhQTJUVGPpARO9B43SRQ/view?utm_content=DAGiGAcvKgI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h617b4dea23";

@@ -36,7 +36,7 @@ function MenuContent({className}) {
                         <a href="https://telegram.im/@dexstudioapp" target="_blank" rel="noreferrer">dexstudioapp</a>
                     </p>
                     <p className="links over-hidden">
-                        <a className="link-hover" href="mailto:info@dexsa.sitem"
+                        <a className="link-hover" href="mailto:info@dexsa.site"
                            data-hover-text="info@dexsa.site">info@dexsa.site</a>
                     </p>
                 </div>

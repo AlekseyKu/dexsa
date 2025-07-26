@@ -29,7 +29,7 @@ export default async function handler(req, res) {
       to: process.env.SMTP_USER,
       subject: "New contact form submission",
       html: `
-        <h3>New message from contact form</h3>
+        <h3>New message from DEXSA.site contact form</h3>
         <p><b>Name:</b> ${name}</p>
         <p><b>Email:</b> ${email}</p>
         <p><b>Phone:</b> ${phone || "Not provided"}</p>

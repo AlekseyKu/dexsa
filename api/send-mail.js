@@ -43,12 +43,103 @@ export default async function handler(req, res) {
       to: email,
       subject: "We received your message",
       html: `
-        <p>Hi ${name},</p>
-        <p>Thank you for contacting us. We have received your message and will respond shortly.</p>
-        <blockquote>${message}</blockquote>
-        <p>Best regards,<br/>DEXSA Team</p>
+      <!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+            body {
+              margin: 0;
+              padding: 0;
+              font-family: 'Montserrat', Arial, sans-serif;
+              background-color: #f5f5f5;
+            }
+            .container {
+              max-width: 600px;
+              margin: 30px auto;
+              background: #ffffff;
+              border-radius: 8px;
+              overflow: hidden;
+              box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+            .header {
+              background-color: #000322;
+              padding: 20px;
+              text-align: center;
+            }
+            .header img {
+              max-width: 160px;
+            }
+            .content {
+              padding: 25px;
+              color: #333;
+              font-size: 15px;
+              line-height: 1.6;
+            }
+            .content h1 {
+              font-size: 22px;
+              color: #000322;
+              margin-bottom: 20px;
+            }
+            .message-box {
+              background-color: #f9f9f9;
+              border-left: 4px solid #C44E35;
+              padding: 15px;
+              margin: 20px 0;
+              font-style: italic;
+            }
+            .cta {
+              display: inline-block;
+              background-color: #C44E35;
+              color: #ffffff;
+              padding: 12px 24px;
+              text-decoration: none;
+              border-radius: 6px;
+              font-weight: 600;
+              margin-top: 20px;
+            }
+            .footer {
+              text-align: center;
+              font-size: 12px;
+              color: #888;
+              padding: 15px;
+              border-top: 1px solid #eaeaea;
+            }
+          </style>
+        </head>
+        <body>
+          <div class="container">
+            <!-- HEADER -->
+            <div class="header">
+              <img src="https://dexsa.site/assets/img/logo/logo_DEXSA.png" alt="DEXSA Logo">
+            </div>
+
+            <!-- CONTENT -->
+            <div class="content">
+              <h1>Hi ${name},</h1>
+              <p>Thank you for contacting <strong>DEXSA</strong>. We’ve received your message and will respond shortly.</p>
+
+              <div class="message-box">${message}</div>
+
+              <p>Meanwhile, you can explore more about us on our website:</p>
+              <a href="https://dexsa.site" class="cta">Visit DEXSA Website</a>
+
+              <p style="margin-top: 20px;">Best regards,<br/>DEXSA Team</p>
+            </div>
+
+            <!-- FOOTER -->
+            <div class="footer">
+              &copy; ${new Date().getFullYear()} DEXSA. All rights reserved.
+            </div>
+          </div>
+        </body>
+      </html>
       `,
     });
+
 
     return res.status(200).json({ success: true, message: "Message sent successfully." });
   } catch (error) {

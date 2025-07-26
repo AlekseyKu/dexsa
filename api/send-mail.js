@@ -60,15 +60,20 @@ export default async function handler(req, res) {
             .container {
               max-width: 600px;
               margin: 30px auto;
-              background: #ffffff;
+              background: #f9f9f9;
               border-radius: 8px;
               overflow: hidden;
               box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             }
             .header {
               background-color: #000322;
-              padding: 20px;
+              padding: 25px;
               text-align: center;
+              color: #C44E35;
+              font-size: 28px;
+              font-weight: 600;
+              font-family: 'Montserrat', Arial, sans-serif;
+              letter-spacing: 2px;
             }
             .header img {
               max-width: 160px;
@@ -91,10 +96,10 @@ export default async function handler(req, res) {
               margin: 20px 0;
               font-style: italic;
             }
-            .cta {
+            .link-text {
               display: inline-block;
               background-color: #C44E35;
-              color: #ffffff;
+              color: #ffffff !important;
               padding: 12px 24px;
               text-decoration: none;
               border-radius: 6px;
@@ -114,7 +119,7 @@ export default async function handler(req, res) {
           <div class="container">
             <!-- HEADER -->
             <div class="header">
-              <img src="https://dexsa.site/assets/img/logo/logo_DEXSA.png" alt="DEXSA Logo">
+              { DEXSA }
             </div>
 
             <!-- CONTENT -->
@@ -125,7 +130,7 @@ export default async function handler(req, res) {
               <div class="message-box">${message}</div>
 
               <p>Meanwhile, you can explore more about us on our website:</p>
-              <a href="https://dexsa.site" class="cta">Visit DEXSA Website</a>
+              <a href="https://dexsa.site" class="link-text">Visit DEXSA Website</a>
 
               <p style="margin-top: 20px;">Best regards,<br/>DEXSA Team</p>
             </div>

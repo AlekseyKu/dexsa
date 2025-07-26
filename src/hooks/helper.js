@@ -1,3 +1,4 @@
+// src\hooks\helper.js
 const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
 export function generateString(length) {
@@ -39,6 +40,6 @@ export function pageLoad(startTime, endTime, duration, current_timer) {
 }
 
 
-export function dsnCN(...args:string) {
+export function dsnCN(...args) {
     return args.join(' ').trim();
 }

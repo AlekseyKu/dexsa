@@ -14,7 +14,7 @@ function ContentFooter({className, ...restProps}) {
             </p>
             <p className="mt-2">
                 {/* <strong>EMA</strong> <span>:</span>  */}
-                <a href="mailto:dexsa.site" target="_blank" rel="noreferrer">info@dexsa.site</a>
+                <a href="mailto:info@dexsa.site" target="_blank" rel="noreferrer">info@dexsa.site</a>
             </p>
         </div>
     );

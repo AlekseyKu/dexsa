@@ -33,7 +33,7 @@ function InfoBox({className}) {
                 </li>
                 <li>
                     <span className="mr-10">Email</span>
-                    <a href="mailto:dexsa.site" target="_blank" rel="noreferrer">info@dexsa.site</a>
+                    <a href="mailto:info@dexsa.site" target="_blank" rel="noreferrer">info@dexsa.site</a>
                 </li>
 
                 {/* https://ig.me/m/username

@@ -1,4 +1,4 @@
-// src\views\projects\ipu.jsx
+// src/views/projects/ipu.jsx
 import React from 'react';
 // import {getPortfolioItem} from "../../api/portfolio/PortfolioData";
 // import {getProjectsItem} from '../../api/projects/ProjectsData';
@@ -32,7 +32,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { PITCH_DECK_LINK } from '../../constants/links';
+// import { PITCH_DECK_LINK } from '../../constants/links';
 import "./style.scss";
 
 
@@ -75,10 +75,10 @@ const Ipu = ({data}) => {
                         DEXSA led the full-stack development — from infrastructure to UX, from AI architecture to brand identity.
                         This skyscraper isn’t just a building — it’s a statement. A promise kept.
                     </p>
+                    {/* 1) ССЫЛКА НА ПОЛИТИКУ */}
                     <ButtonProject className={"mt-20"}
-                                   href={PITCH_DECK_LINK}
-                                   target="_blank" rel="noopener noreferrer">
-                        PITCH DECK
+                                   href="/projects/ipu/privacy-policy">
+                        Privacy Policy
                     </ButtonProject>
                 </FadeUpTrigger>
             </Container>
@@ -124,7 +124,10 @@ const Ipu = ({data}) => {
                                 Trust is no longer abstract. <br /> With IPU, it’s trackable, valuable, and real.
                             </h6>
                             <div className="button-box" ref={ref}>
-                                <ButtonDefault text="PITCH DECK" icon={faAngleRight} target="_blank" href={PITCH_DECK_LINK}/>
+                                {/* Кнопка на Pitch Deck оставляем без изменений */}
+                                {/* <ButtonDefault text="PITCH DECK" icon={faAngleRight} target="_blank" href={PITCH_DECK_LINK}/> */}
+                                {/* 2) ССЫЛКА НА ТЕЛЕГРАМ-БОТА (откроет приложение Telegram при наличии) */}
+                                <ButtonDefault text="LAUNCH IPU" icon={faAngleRight} target="_blank" rel="noopener noreferrer" href="https://t.me/ipu_promise_bot"/>
                             </div>
                         </DsnGrid>
                     )}

@@ -37,10 +37,10 @@ const BizProcessAutomation = React.lazy(() => import("../views/projects/bizProce
 const BizWebDevelopment= React.lazy(() => import("../views/projects/bizWebDevelopment"))
 const BizTechSupport= React.lazy(() => import("../views/projects/bizTechSupport"))
 
+const IpuPrivacy = React.lazy(() => import("../views/legal/privacy"));
+
 // const BizForInvestors= React.lazy(() => import("../views/projects/bizForInvestors"))
 // const BizFor= React.lazy(() => import("../views/projects/bizFor"))
-
-
 
 const Router = () => {
 
@@ -64,7 +64,6 @@ const Router = () => {
     const bizWebDevelopmentData = getProjectsBySlug('web-development');
     const bizTechSupportData = getProjectsBySlug('it-support');
     // const bizForInvestorsData = getProjectsBySlug('for-investors');
-
 
 
     return (
@@ -100,6 +99,8 @@ const Router = () => {
                     <Route exact path="/projects/process-automation" element={<BizProcessAutomation data={bizProcessAutomationData}/>}/>
                     <Route exact path="/projects/web-development" element={<BizWebDevelopment data={bizWebDevelopmentData}/>}/>
                     <Route exact path="/projects/it-support" element={<BizTechSupport data={bizTechSupportData}/>}/>
+
+                    <Route exact path="/projects/ipu/privacy-policy" element={<IpuPrivacy/>}/>
 
                     {/* <Route exact path="/projects/for-investors" element={<BizForInvestors data={bizForInvestorsData}/>}/> */}
                     {/* <Route exact path="/projects/for" element={<BizFor/>}/> */}

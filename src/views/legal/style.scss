@@ -1,0 +1,21 @@
+/* Отступ под прозрачный фиксированный хедер */
+.pt-after-header {
+  /* Значение можно переопределить глобально переменной --site-header-height */
+  padding-top: calc(var(--site-header-height, 20vh) + env(safe-area-inset-top));
+}
+
+/* На мобильных обычно хедер ниже — чуть больше отступ */
+@media (max-width: 991.98px) {
+  .pt-after-header {
+    padding-top: calc(var(--site-header-height, 20vh) + env(safe-area-inset-top));
+  }
+}
+
+/* Чтобы якоря не прятались под хедер (если появятся) */
+.pt-after-header [id] {
+  scroll-margin-top: calc(var(--site-header-height, 20vh) + 16px);
+}
+
+.pt-after-body {
+    padding-bottom: 10vh;
+}

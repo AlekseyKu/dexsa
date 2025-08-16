@@ -76,11 +76,11 @@ const Weru = ({data}) => {
                         DEXSA spearheaded the end-to-end creation — from blockchain infrastructure to intuitive design, 
                         from AI-driven curation to a timeless brand identity. WERU isn’t just a platform — it’s a legacy. 
                     </p>
-                    <ButtonProject className={"mt-20"}
-                                   href={PITCH_DECK_LINK}
-                                   target="_blank" rel="noopener noreferrer">
-                        PITCH DECK
-                    </ButtonProject>
+                    {/* <ButtonProject className={"mt-20"} */}
+                                   {/* href={PITCH_DECK_LINK} */}
+                                   {/* target="_blank" rel="noopener noreferrer"> */}
+                        {/* PITCH DECK */}
+                    {/* </ButtonProject> */}
                 </FadeUpTrigger>
             </Container>
             {/*End Info Project*/}
@@ -123,9 +123,9 @@ const Weru = ({data}) => {
                             <h6>
                                 In a world where 80% of memories are lost forever — WERU ensures they stay alive.
                             </h6>
-                            <div className="button-box" ref={ref}>
-                                <ButtonDefault text="PITCH DECK" icon={faAngleRight} target="_blank" href={PITCH_DECK_LINK}/>
-                            </div>
+                            {/* <div className="button-box" ref={ref}> */}
+                                {/* <ButtonDefault text="PITCH DECK" icon={faAngleRight} target="_blank" href={PITCH_DECK_LINK}/> */}
+                            {/* </div> */}
                         </DsnGrid>
                     )}
                 </FadeUpTrigger>

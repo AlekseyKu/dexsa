@@ -38,6 +38,7 @@ const BizWebDevelopment= React.lazy(() => import("../views/projects/bizWebDevelo
 const BizTechSupport= React.lazy(() => import("../views/projects/bizTechSupport"))
 
 const IpuPrivacy = React.lazy(() => import("../views/legal/privacy"));
+const IpuTerms = React.lazy(() => import("../views/legal/terms"));
 
 // const BizForInvestors= React.lazy(() => import("../views/projects/bizForInvestors"))
 // const BizFor= React.lazy(() => import("../views/projects/bizFor"))
@@ -101,6 +102,7 @@ const Router = () => {
                     <Route exact path="/projects/it-support" element={<BizTechSupport data={bizTechSupportData}/>}/>
 
                     <Route exact path="/projects/ipu/privacy-policy" element={<IpuPrivacy/>}/>
+                    <Route exact path="/projects/ipu/terms" element={<IpuTerms/>}/>
 
                     {/* <Route exact path="/projects/for-investors" element={<BizForInvestors data={bizForInvestorsData}/>}/> */}
                     {/* <Route exact path="/projects/for" element={<BizFor/>}/> */}

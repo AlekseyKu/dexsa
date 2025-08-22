@@ -80,6 +80,11 @@ const Ipu = ({data}) => {
                                    href="/projects/ipu/privacy-policy">
                         Privacy Policy
                     </ButtonProject>
+                    {/* 2) ССЫЛКА НА УСЛОВИЯ ИСПОЛЬЗОВАНИЯ */}
+                    <ButtonProject className={"mt-20 ml-20"}
+                                   href="/projects/ipu/terms">
+                        Terms of Service
+                    </ButtonProject>
                 </FadeUpTrigger>
             </Container>
             {/* End Info Project */}
